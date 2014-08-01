@@ -151,7 +151,7 @@
   from { }
   to { opacity: 0; -webkit-transform: scale(.8); }
 }
-@-moz-keyframes slideInUp {
+@-moz-keyframes scaleDown {
   from 	{ }
   to { opacity: 0; -moz-transform: scale(.8); }
 }
@@ -164,7 +164,7 @@
 @-webkit-keyframes moveFromBottom {
   from { -webkit-transform: translateY(100%); }
 }
-@-moz-keyframes slideInUp {
+@-moz-keyframes moveFromBottom {
   from 	{ -moz-transform:translateY(100%); }
 }
 @keyframes moveFromBottom {

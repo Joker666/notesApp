@@ -134,7 +134,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-transform: scale(0.8);
   }
 }
-@-moz-keyframes slideInUp {
+@-moz-keyframes scaleDown {
   /* line 156, ../sass/_mixins.scss */
   to {
     opacity: 0;
@@ -155,7 +155,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-transform: translateY(100%);
   }
 }
-@-moz-keyframes slideInUp {
+@-moz-keyframes moveFromBottom {
   /* line 168, ../sass/_mixins.scss */
   from {
     -moz-transform: translateY(100%);
@@ -621,15 +621,21 @@ body:after {
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 /* line 94, ../sass/_modules.scss */
+.home section .board-container .title-container input {
+  border: none;
+  margin-left: 2%;
+  font-size: 1.5rem;
+}
+/* line 99, ../sass/_modules.scss */
 .home section .board-container .title-container a {
   color: inherit;
 }
-/* line 97, ../sass/_modules.scss */
+/* line 102, ../sass/_modules.scss */
 .home section .board-container .title-container i {
-  margin-top: 2%;
+  margin-top: 3%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -640,35 +646,35 @@ body:after {
   cursor: pointer;
   margin-right: 3%;
 }
-/* line 103, ../sass/_modules.scss */
+/* line 108, ../sass/_modules.scss */
 .home section .board-container .title-container .fa-2x-add {
   -moz-transition: all 300ms ease-out;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-/* line 106, ../sass/_modules.scss */
+/* line 111, ../sass/_modules.scss */
 .home section .board-container .title-container .fa-2x-remove {
   -moz-transition: all 300ms ease-out;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-/* line 109, ../sass/_modules.scss */
+/* line 114, ../sass/_modules.scss */
 .home section .board-container .title-container .getpositioned {
   margin-right: 5%;
-  margin-top: 0;
+  margin-top: 1%;
 }
-/* line 114, ../sass/_modules.scss */
+/* line 119, ../sass/_modules.scss */
 .home section .board-container .board-description {
   padding-top: 4%;
 }
-/* line 116, ../sass/_modules.scss */
+/* line 121, ../sass/_modules.scss */
 .home section .board-container .board-description textarea {
   width: 100%;
   height: 155px;
   border: none;
 }
 
-/* line 126, ../sass/_modules.scss */
+/* line 131, ../sass/_modules.scss */
 .notes h1 {
   color: whitesmoke;
   -moz-box-sizing: border-box;
@@ -684,12 +690,12 @@ body:after {
   margin-bottom: 2%;
 }
 
-/* line 134, ../sass/_modules.scss */
+/* line 139, ../sass/_modules.scss */
 .notes-section {
   clear: both;
 }
 
-/* line 137, ../sass/_modules.scss */
+/* line 142, ../sass/_modules.scss */
 .note-container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -705,16 +711,23 @@ body:after {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
-  background: mintcream;
+  -moz-transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
 }
-/* line 145, ../sass/_modules.scss */
+/* line 150, ../sass/_modules.scss */
 .note-container p {
   font-family: 'PT Sans', sans-serif;
   font-size: 1rem;
   font-weight: normal;
 }
-/* line 150, ../sass/_modules.scss */
+/* line 155, ../sass/_modules.scss */
 .note-container .note-icons {
+  width: 100%;
+  height: 40px;
+}
+/* line 158, ../sass/_modules.scss */
+.note-container .note-icons button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -722,27 +735,52 @@ body:after {
   float: left;
   padding-left: 0.41667%;
   padding-right: 0.41667%;
-}
-/* line 152, ../sass/_modules.scss */
-.note-container .note-icons button {
   background: none !important;
   border: none;
   padding: 0 !important;
   -moz-transition: all 200ms ease-out;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+  margin-top: 1.5%;
 }
-/* line 155, ../sass/_modules.scss */
+/* line 163, ../sass/_modules.scss */
 .note-container .note-icons button:hover {
   color: orangered;
   cursor: pointer;
 }
-/* line 161, ../sass/_modules.scss */
+/* line 168, ../sass/_modules.scss */
+.note-container .note-icons ng-color-picker {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: right;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+}
+/* line 170, ../sass/_modules.scss */
+.note-container .note-icons ng-color-picker ul {
+  margin-top: 5.5%;
+}
+/* line 173, ../sass/_modules.scss */
+.note-container .note-icons ng-color-picker li {
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 4%;
+}
+/* line 180, ../sass/_modules.scss */
+.note-container .note-icons ng-color-picker .selected {
+  border: 1px solid #333;
+}
+/* line 185, ../sass/_modules.scss */
 .note-container .note-description {
   clear: both;
 }
-/* line 163, ../sass/_modules.scss */
+/* line 187, ../sass/_modules.scss */
 .note-container .note-description textarea {
+  background: inherit;
   width: 100%;
   height: 155px;
   border: none;

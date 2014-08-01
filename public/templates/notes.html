@@ -3,13 +3,14 @@
 
 <section class="notes-section">
     <!--<div ng-repeat="note in notes" ng-class="{'row bottomspace': ($index)%3==0}" class="note-container scale-fade">-->
-    <div ng-repeat="note in notes" class="note-container rotate-in">
+    <div change-Background="{{note.id}}" ng-repeat="note in notes" class="note-container rotate-in" ng-style="{background: note.background}">
         <div class="note-icons">
             <form ng-submit="trash($index, note.id)">
                 <button><i class="fa fa-trash-o fa-2x"></i></button>
             </form>
+            <ng-color-picker selected='note.background'></ng-color-picker>
         </div>
-        <div class="note-description"><textarea ng-model="note.description" ng-change="save(note.id, note.description)"></textarea></div>
+        <div class="note-description"><textarea ng-model="note.description" ng-change="save(note.id, note.description, null)"></textarea></div>
     </div>
 </section>
 </div>

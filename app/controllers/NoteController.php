@@ -73,7 +73,11 @@ class NoteController extends \BaseController {
 	public function update($boardId, $noteId)
 	{
         $note = Note::findOrFail($noteId);
-        $note->description = Input::get('description');
+        if(Input::get('description')){
+            $note->description = Input::get('description');
+        }else if(Input::get('background')){
+            $note->background = Input::get('background');
+        }
         if($note->save()){
             return Response::json(['status' => 200, 'mesg' => 'saved successfully!']);
         }else{

@@ -17,6 +17,7 @@ class CreateNotesTable extends Migration {
             $table->increments('id');
             $table->integer('board_id')->unsigned();
             $table->foreign('board_id')->references('id')->on('boards')->onDelete('cascade');
+            $table->text('background');
             $table->text('description');
             $table->timestamps();
         });

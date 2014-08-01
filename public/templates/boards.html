@@ -7,11 +7,10 @@
     <!--<div ng-repeat="board in boards" ng-class="{'row bottomspace': ($index)%3==0}" class="board-container">-->
     <div ng-repeat="board in boards" class="board-container">
         <div class="title-container">
-            <!--<a ui-sref="boards.notes({ boardId: board.id })">-->
             <a ui-sref="boards.notes({ boardId: board.id })">
                 <i class="fa fa-arrow-right" ng-class="{'fa-2x getpositioned': obj.value1 == 'value'}" ng-mouseenter="obj.value1 = 'value'" ng-mouseleave="obj.value1 = ''"></i>
             </a>
-            <h2>{{board.title}} {{board.id}}</h2>
+            <input type="text" ng-model="board.title" ng-change="save(board.id, board.title, null)"/>
         </div>
         <div class="board-description">
             <textarea ng-model="board.description" ng-change="save(board.id, null, board.description)"></textarea>

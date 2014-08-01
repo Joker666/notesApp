@@ -56,12 +56,13 @@ notesApp.controller('NotesController', function($scope, NotesService, $statePara
 
 
     var saveTimeoutForNotes;
-    $scope.save = function(id, description){
+    $scope.save = function(id, description, background){
         $timeout.cancel(saveTimeoutForNotes);
         saveTimeoutForNotes = $timeout(function(){
-            NotesService.update($stateParams['boardId'], id, description).then(function(){
+            NotesService.update($stateParams['boardId'], id, description, background).then(function(){
                 console.log('note updated');
             });
         }, 1000);
     }
+
 })

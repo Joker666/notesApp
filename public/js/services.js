@@ -96,10 +96,10 @@ notesApp.factory('NotesService', function($http, $q){
             return defer.promise;
 
         },
-        update: function (boardId, noteId, description) {
+        update: function (boardId, noteId, description, background) {
             var defer = $q.defer();
             var url = "/boards/" + boardId + '/notes/' + noteId;
-            var params = {description: description};
+            var params = {description: description, background: background};
 
             $http.put(url, params).success(defer.resolve).error(defer.reject);
 

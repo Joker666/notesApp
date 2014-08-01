@@ -14,6 +14,7 @@ class NotesTableSeeder extends Seeder {
 			Note::create([
                 'board_id' => $faker->numberBetween(1,30),
                 'description' => $faker->paragraph(1),
+                'background' => '#F5FFFA'
 			]);
 		}
 	}
