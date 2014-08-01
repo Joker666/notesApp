@@ -1,0 +1,21 @@
+<!--<div ui-view></div>-->
+<div class="home">
+    <button ng-click="logout()" id="logout"><i class="fa fa-power-off fa-2x"></i></button>
+    <h1>Boards</h1>
+
+<section>
+    <!--<div ng-repeat="board in boards" ng-class="{'row bottomspace': ($index)%3==0}" class="board-container">-->
+    <div ng-repeat="board in boards" class="board-container">
+        <div class="title-container">
+            <!--<a ui-sref="boards.notes({ boardId: board.id })">-->
+            <a ui-sref="boards.notes({ boardId: board.id })">
+                <i class="fa fa-arrow-right" ng-class="{'fa-2x getpositioned': obj.value1 == 'value'}" ng-mouseenter="obj.value1 = 'value'" ng-mouseleave="obj.value1 = ''"></i>
+            </a>
+            <h2>{{board.title}} {{board.id}}</h2>
+        </div>
+        <div class="board-description">
+            <textarea ng-model="board.description" ng-change="save(board.id, null, board.description)"></textarea>
+        </div>
+    </div>
+</section>
+</div>

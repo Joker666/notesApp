@@ -1,0 +1,149 @@
+@include border-box-sizing;
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+*{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+}
+*:focus {
+  outline: 0;
+}
+body{
+  background: lighten(#000000, 20%);
+}
+
+h1{
+  @include header1();
+}
+h2{
+  @include header2();
+}
+
+.page.ng-leave 	{ z-index:999; }
+.page.ng-enter 	{ z-index:888; }
+
+
+/* notes -------------------------- */
+.page-notes.ng-leave         {
+  @include scaledown();
+}
+//.page-notes.ng-enter 		{
+//  @include slideinright();
+//}
+
+/* boards -------------------------- */
+.page-boards.ng-leave         {
+  @include scaledown();
+}
+.page-boards.ng-enter 		{
+  @include movefrombottom();
+}
+
+/* login ------------------------ */
+.page-login.ng-leave        {
+  @include movetotop();
+}
+.page-login.ng-enter 		{
+  @include slideinright();
+}
+
+/* ------------------------------------------- */
+/* Scale Fade
+/* ------------------------------------------- */
+
+.scale-fade {
+  @include easingTimingFunction();
+
+  &.ng-enter {
+    @include transformation(scale(0.7));
+    @include transitionDuration(250ms);
+    opacity: 0;
+  }
+
+  &.ng-enter-active {
+    @include transformation(scale(1));
+    opacity: 1;
+  }
+
+  &.ng-leave {
+    @include transformation(scale(1));
+    @include transitionDuration(250ms);
+    opacity: 1;
+  }
+
+  &.ng-leave-active {
+    @include transformation(scale(0.7));
+    opacity: 0;
+  }
+
+  // Hide
+  &.ng-hide-add {
+    @include transformation(scale(1));
+    @include transitionDuration(250ms);
+    opacity:1;
+  }
+  &.ng-hide-add.ng-hide-add-active {
+    @include transformation(scale(0.7));
+    opacity:0;
+  }
+
+  // Show
+  &.ng-hide-remove {
+    @include transformation(scale(0.7));
+    @include transitionDuration(250ms);
+    display:block!important;
+    opacity:0;
+  }
+  &.ng-hide-remove.ng-hide-remove-active {
+    @include transformation(scale(1));
+    opacity:1;
+  }
+}
+.rotate-in {
+  @include bouncyTimingFunction();
+
+  &.ng-enter {
+    @include transformation(perspective(300px) rotateY(40deg));
+    @include transitionDuration(550ms);
+    opacity: 0.7;
+  }
+
+  &.ng-enter-active {
+    @include transformation(perspective(300px) rotateY(0deg));
+    opacity: 1;
+  }
+
+  &.ng-leave {
+    @include transformation(perspective(300px) rotateY(0deg));
+    @include transitionDuration(550ms);
+    opacity: 1;
+  }
+
+  &.ng-leave-active {
+    @include transformation(perspective(300px) rotateY(-40deg));
+    opacity: 0.7;
+  }
+
+  // Hide
+  &.ng-hide-add {
+    @include transformation(perspective(300px) rotateY(0deg));
+    @include transitionDuration(550ms);
+    opacity:1;
+  }
+  &.ng-hide-add.ng-hide-add-active {
+    @include transformation(perspective(300px) rotateY(-40deg));
+    opacity:0;
+  }
+
+  // Show
+  &.ng-hide-remove {
+    @include transformation(perspective(300px) rotateY(40deg));
+    @include transitionDuration(550ms);
+    display:block!important;
+    opacity:0;
+  }
+  &.ng-hide-remove.ng-hide-remove-active {
+    @include transformation(perspective(300px) rotateY(0deg));
+    opacity:1;
+  }
+}

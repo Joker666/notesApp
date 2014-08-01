@@ -1,0 +1,169 @@
+.page{
+  @include page();
+}
+.pageL{
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+.page-login{
+  background: none repeat scroll 0 0 $softgreen;
+}
+.page-boards{
+  background: none repeat scroll 0 0 $softblue;
+}
+.page-notes{
+  background: none repeat scroll 0 0 $pastegreen;
+}
+
+.login-form{
+  background-color: white;
+  border-radius: 60px;
+  border: 0 solid transparent;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  @include span(3 of 12);
+  height: 40%;
+  h1{
+    color: $softgreen;
+    position: absolute;
+    top: 12%;
+    left: 25%;
+  }
+  input[type=text]{
+    top:50%;
+    @include textbox();
+  }
+  input[type=password]{
+    top:70%;
+    @include textbox();
+  }
+  button{
+    @include invisible-button();
+    position: absolute;
+    top: 83%;
+    left: 46%;
+    @include single-transition(all, 500ms, ease-out);
+    &:hover{
+      color: $softgreen;
+      @include translateY(0.2em);
+      cursor: pointer;
+    }
+  }
+}
+.row{
+  clear: both;
+}
+.bottomspace{
+  margin-bottom: 3%;
+}
+.home{
+  #logout{
+    @include invisible-button();
+    cursor: pointer;
+    @include span(last 1);
+    margin-top: 0.5%;
+  }
+  h1{
+    color: whitesmoke;
+    @include span(isolate 3 at 2);
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  section{
+    @include break;
+    .board-container{
+      @include span(6 wide);
+      @include pre(6%);
+      min-height: 200px;
+      margin-bottom: 3%;
+      border: none;
+      @include border-radius(15px);
+      background: mintcream;
+      .title-container{
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+        padding-bottom: 2%;
+        a{
+          color: inherit;
+        }
+        i{
+          margin-top: 2%;
+          @include span(last 1);
+          cursor: pointer;
+          margin-right: 3%;
+        }
+        .fa-2x-add{
+          @include single-transition(all, 300ms, ease-out);
+        }
+        .fa-2x-remove{
+          @include single-transition(all, 300ms, ease-out);
+        }
+        .getpositioned{
+          margin-right: 5%;
+          margin-top: 0;
+        }
+      }
+      .board-description{
+        padding-top: 4%;
+        textarea{
+          width: 100%;
+          height: 155px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+.notes{
+  h1{
+    color: whitesmoke;
+    @include span(isolate 3 at 2);
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+.notes-section{
+  @include break;
+}
+.note-container{
+  @include span(6 wide);
+  @include pre(6%);
+  min-height: 200px;
+  margin-bottom: 3%;
+  border: none;
+  @include border-radius(15px);
+  background: mintcream;
+  p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .note-icons{
+    @include span(first 3);
+    button{
+      @include invisible-button();
+      @include single-transition(all, 200ms, ease-out);
+      &:hover{
+        color: orangered;
+        cursor: pointer;
+      }
+    }
+  }
+  .note-description{
+    @include break;
+    textarea{
+      width: 100%;
+      height: 155px;
+      border: none;
+    }
+  }
+}

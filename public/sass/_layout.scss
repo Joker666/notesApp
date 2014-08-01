@@ -1,0 +1,18 @@
+$susy:(
+    columns: 24,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
+);
+
+body{
+  @include container(100%);
+}
+$breakpoint-extra-large-width: 1450px;
+
+$breakpoint-large-width: 801px 1449px;
+
+$breakpoint-medium-width: 400px 800px;
+
+$breakpoint-small-width: 1px 3999px;

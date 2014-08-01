@@ -1,0 +1,749 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 94, ../sass/_mixins.scss */
+.page.ng-leave {
+  z-index: 999;
+}
+
+/* line 95, ../sass/_mixins.scss */
+.page.ng-enter {
+  z-index: 888;
+}
+
+@-webkit-keyframes moveToTop {
+  /* line 124, ../sass/_mixins.scss */
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@-moz-keyframes moveToTop {
+  /* line 128, ../sass/_mixins.scss */
+  to {
+    -moz-transform: translateY(-100%);
+  }
+}
+@keyframes moveToTop {
+  /* line 132, ../sass/_mixins.scss */
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+@keyframes slideInRight {
+  /* line 137, ../sass/_mixins.scss */
+  from {
+    transform: translateX(100%);
+  }
+
+  /* line 138, ../sass/_mixins.scss */
+  to {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideInRight {
+  /* line 141, ../sass/_mixins.scss */
+  from {
+    -moz-transform: translateX(100%);
+  }
+
+  /* line 142, ../sass/_mixins.scss */
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideInRight {
+  /* line 145, ../sass/_mixins.scss */
+  from {
+    -webkit-transform: translateX(100%);
+  }
+
+  /* line 146, ../sass/_mixins.scss */
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+@-webkit-keyframes scaleDown {
+  /* line 152, ../sass/_mixins.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes slideInUp {
+  /* line 156, ../sass/_mixins.scss */
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes scaleDown {
+  /* line 160, ../sass/_mixins.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes moveFromBottom {
+  /* line 165, ../sass/_mixins.scss */
+  from {
+    -webkit-transform: translateY(100%);
+  }
+}
+@-moz-keyframes slideInUp {
+  /* line 168, ../sass/_mixins.scss */
+  from {
+    -moz-transform: translateY(100%);
+  }
+}
+@keyframes moveFromBottom {
+  /* line 171, ../sass/_mixins.scss */
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+/* line 14, ../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/_base.scss */
+* {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+}
+
+/* line 8, ../sass/_base.scss */
+*:focus {
+  outline: 0;
+}
+
+/* line 11, ../sass/_base.scss */
+body {
+  background: #333333;
+}
+
+/* line 15, ../sass/_base.scss */
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3.8rem;
+}
+
+/* line 18, ../sass/_base.scss */
+h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2.2rem;
+}
+
+/* line 22, ../sass/_base.scss */
+.page.ng-leave {
+  z-index: 999;
+}
+
+/* line 23, ../sass/_base.scss */
+.page.ng-enter {
+  z-index: 888;
+}
+
+/* notes -------------------------- */
+/* line 27, ../sass/_base.scss */
+.page-notes.ng-leave {
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+
+/* boards -------------------------- */
+/* line 35, ../sass/_base.scss */
+.page-boards.ng-leave {
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+
+/* line 38, ../sass/_base.scss */
+.page-boards.ng-enter {
+  -webkit-animation: moveFromBottom .6s ease both;
+  -moz-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both;
+}
+
+/* login ------------------------ */
+/* line 43, ../sass/_base.scss */
+.page-login.ng-leave {
+  -webkit-animation: moveToTop .7s ease-in-out both;
+  -moz-animation: moveToTop .7s ease-in-out both;
+  animation: moveToTop .7s ease-in-out both;
+}
+
+/* line 46, ../sass/_base.scss */
+.page-login.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease-in;
+  -moz-animation: slideInRight 0.5s both ease-in;
+  animation: slideInRight 0.5s both ease-in;
+}
+
+/* ------------------------------------------- */
+/* Scale Fade
+/* ------------------------------------------- */
+/* line 54, ../sass/_base.scss */
+.scale-fade {
+  -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+}
+/* line 57, ../sass/_base.scss */
+.scale-fade.ng-enter {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 0;
+}
+/* line 63, ../sass/_base.scss */
+.scale-fade.ng-enter-active {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+/* line 68, ../sass/_base.scss */
+.scale-fade.ng-leave {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+/* line 74, ../sass/_base.scss */
+.scale-fade.ng-leave-active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  opacity: 0;
+}
+/* line 80, ../sass/_base.scss */
+.scale-fade.ng-hide-add {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+/* line 85, ../sass/_base.scss */
+.scale-fade.ng-hide-add.ng-hide-add-active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  opacity: 0;
+}
+/* line 91, ../sass/_base.scss */
+.scale-fade.ng-hide-remove {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  display: block !important;
+  opacity: 0;
+}
+/* line 97, ../sass/_base.scss */
+.scale-fade.ng-hide-remove.ng-hide-remove-active {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+
+/* line 102, ../sass/_base.scss */
+.rotate-in {
+  -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1);
+  /* older webkit */
+  -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* easeOutBack */
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1);
+  /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
+  /* custom */
+}
+/* line 105, ../sass/_base.scss */
+.rotate-in.ng-enter {
+  transform: perspective(300px) rotateY(40deg);
+  -ms-transform: perspective(300px) rotateY(40deg);
+  -webkit-transform: perspective(300px) rotateY(40deg);
+  transition-duration: 550ms;
+  -webkit-transition-duration: 550ms;
+  opacity: 0.7;
+}
+/* line 111, ../sass/_base.scss */
+.rotate-in.ng-enter-active {
+  transform: perspective(300px) rotateY(0deg);
+  -ms-transform: perspective(300px) rotateY(0deg);
+  -webkit-transform: perspective(300px) rotateY(0deg);
+  opacity: 1;
+}
+/* line 116, ../sass/_base.scss */
+.rotate-in.ng-leave {
+  transform: perspective(300px) rotateY(0deg);
+  -ms-transform: perspective(300px) rotateY(0deg);
+  -webkit-transform: perspective(300px) rotateY(0deg);
+  transition-duration: 550ms;
+  -webkit-transition-duration: 550ms;
+  opacity: 1;
+}
+/* line 122, ../sass/_base.scss */
+.rotate-in.ng-leave-active {
+  transform: perspective(300px) rotateY(-40deg);
+  -ms-transform: perspective(300px) rotateY(-40deg);
+  -webkit-transform: perspective(300px) rotateY(-40deg);
+  opacity: 0.7;
+}
+/* line 128, ../sass/_base.scss */
+.rotate-in.ng-hide-add {
+  transform: perspective(300px) rotateY(0deg);
+  -ms-transform: perspective(300px) rotateY(0deg);
+  -webkit-transform: perspective(300px) rotateY(0deg);
+  transition-duration: 550ms;
+  -webkit-transition-duration: 550ms;
+  opacity: 1;
+}
+/* line 133, ../sass/_base.scss */
+.rotate-in.ng-hide-add.ng-hide-add-active {
+  transform: perspective(300px) rotateY(-40deg);
+  -ms-transform: perspective(300px) rotateY(-40deg);
+  -webkit-transform: perspective(300px) rotateY(-40deg);
+  opacity: 0;
+}
+/* line 139, ../sass/_base.scss */
+.rotate-in.ng-hide-remove {
+  transform: perspective(300px) rotateY(40deg);
+  -ms-transform: perspective(300px) rotateY(40deg);
+  -webkit-transform: perspective(300px) rotateY(40deg);
+  transition-duration: 550ms;
+  -webkit-transition-duration: 550ms;
+  display: block !important;
+  opacity: 0;
+}
+/* line 145, ../sass/_base.scss */
+.rotate-in.ng-hide-remove.ng-hide-remove-active {
+  transform: perspective(300px) rotateY(0deg);
+  -ms-transform: perspective(300px) rotateY(0deg);
+  -webkit-transform: perspective(300px) rotateY(0deg);
+  opacity: 1;
+}
+
+/* line 9, ../sass/_layout.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 1, ../sass/_modules.scss */
+.page {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+/* line 4, ../sass/_modules.scss */
+.pageL {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+/* line 14, ../sass/_modules.scss */
+.page-login {
+  background: none repeat scroll 0 0 #60d7a9;
+}
+
+/* line 17, ../sass/_modules.scss */
+.page-boards {
+  background: none repeat scroll 0 0 #7bb7fa;
+}
+
+/* line 20, ../sass/_modules.scss */
+.page-notes {
+  background: none repeat scroll 0 0 #0ac2d2;
+}
+
+/* line 24, ../sass/_modules.scss */
+.login-form {
+  background-color: white;
+  border-radius: 60px;
+  border: 0 solid transparent;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  height: 40%;
+}
+/* line 33, ../sass/_modules.scss */
+.login-form h1 {
+  color: #60d7a9;
+  position: absolute;
+  top: 12%;
+  left: 25%;
+}
+/* line 39, ../sass/_modules.scss */
+.login-form input[type=text] {
+  top: 50%;
+  position: absolute;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  left: 8%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #b3b3b3;
+  text-align: center;
+}
+/* line 43, ../sass/_modules.scss */
+.login-form input[type=password] {
+  top: 70%;
+  position: absolute;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  left: 8%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #b3b3b3;
+  text-align: center;
+}
+/* line 47, ../sass/_modules.scss */
+.login-form button {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  position: absolute;
+  top: 83%;
+  left: 46%;
+  -moz-transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+/* line 53, ../sass/_modules.scss */
+.login-form button:hover {
+  color: #60d7a9;
+  -moz-transform: translateY(0.2em);
+  -ms-transform: translateY(0.2em);
+  -webkit-transform: translateY(0.2em);
+  transform: translateY(0.2em);
+  cursor: pointer;
+}
+
+/* line 60, ../sass/_modules.scss */
+.row {
+  clear: both;
+}
+
+/* line 63, ../sass/_modules.scss */
+.bottomspace {
+  margin-bottom: 3%;
+}
+
+/* line 67, ../sass/_modules.scss */
+.home #logout {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 4.16667%;
+  float: right;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+  margin-top: 0.5%;
+}
+/* line 73, ../sass/_modules.scss */
+.home h1 {
+  color: whitesmoke;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12.5%;
+  float: left;
+  margin-left: 4.16667%;
+  margin-right: -100%;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+/* line 79, ../sass/_modules.scss */
+.home section {
+  clear: both;
+}
+/* line 81, ../sass/_modules.scss */
+.home section .board-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+  margin-left: 6%;
+  min-height: 200px;
+  margin-bottom: 3%;
+  border: none;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: mintcream;
+}
+/* line 89, ../sass/_modules.scss */
+.home section .board-container .title-container {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding-bottom: 2%;
+}
+/* line 94, ../sass/_modules.scss */
+.home section .board-container .title-container a {
+  color: inherit;
+}
+/* line 97, ../sass/_modules.scss */
+.home section .board-container .title-container i {
+  margin-top: 2%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 4.16667%;
+  float: right;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+  cursor: pointer;
+  margin-right: 3%;
+}
+/* line 103, ../sass/_modules.scss */
+.home section .board-container .title-container .fa-2x-add {
+  -moz-transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+/* line 106, ../sass/_modules.scss */
+.home section .board-container .title-container .fa-2x-remove {
+  -moz-transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+/* line 109, ../sass/_modules.scss */
+.home section .board-container .title-container .getpositioned {
+  margin-right: 5%;
+  margin-top: 0;
+}
+/* line 114, ../sass/_modules.scss */
+.home section .board-container .board-description {
+  padding-top: 4%;
+}
+/* line 116, ../sass/_modules.scss */
+.home section .board-container .board-description textarea {
+  width: 100%;
+  height: 155px;
+  border: none;
+}
+
+/* line 126, ../sass/_modules.scss */
+.notes h1 {
+  color: whitesmoke;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12.5%;
+  float: left;
+  margin-left: 4.16667%;
+  margin-right: -100%;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* line 134, ../sass/_modules.scss */
+.notes-section {
+  clear: both;
+}
+
+/* line 137, ../sass/_modules.scss */
+.note-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+  margin-left: 6%;
+  min-height: 200px;
+  margin-bottom: 3%;
+  border: none;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: mintcream;
+}
+/* line 145, ../sass/_modules.scss */
+.note-container p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+/* line 150, ../sass/_modules.scss */
+.note-container .note-icons {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12.5%;
+  float: left;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+}
+/* line 152, ../sass/_modules.scss */
+.note-container .note-icons button {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  -moz-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+/* line 155, ../sass/_modules.scss */
+.note-container .note-icons button:hover {
+  color: orangered;
+  cursor: pointer;
+}
+/* line 161, ../sass/_modules.scss */
+.note-container .note-description {
+  clear: both;
+}
+/* line 163, ../sass/_modules.scss */
+.note-container .note-description textarea {
+  width: 100%;
+  height: 155px;
+  border: none;
+}

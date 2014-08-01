@@ -1,0 +1,172 @@
+@mixin textbox{
+  position: absolute;
+  @include span(10 of 12);
+  left: 8%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid $grey;
+  text-align: center;
+}
+@mixin header1{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3.8rem;
+}
+@mixin header2{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2.2rem;
+}
+@mixin invisible-button{
+  background:none!important;
+  border:none;
+  padding:0!important;
+}
+@mixin page{
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+@mixin transitionDuration ($duration) {
+  transition-duration: $duration;
+  -webkit-transition-duration: $duration;
+}
+
+@mixin easingTimingFunction () {
+  -webkit-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -ms-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -ms-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+
+@mixin bouncyTimingFunction () {
+  -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+  -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  -moz-transition: all 0 cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  -ms-transition: all 0 cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  -o-transition: all 0 cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition: all 0 cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.450, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.450, 1.595);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.450, 1.595);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.450, 1.595);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.450, 1.595);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.450, 1.595); /* custom */
+}
+
+@mixin easingOutQuadTimingFunction () {
+  -webkit-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -ms-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: all 0 cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -ms-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+
+@mixin transformation ($value) {
+  transform: $value;
+  -ms-transform: $value;
+  -webkit-transform: $value;
+}
+
+
+
+
+////////////////////////////////////////////Angulat Animation Mixins
+.page.ng-leave 	{ z-index:999; }
+.page.ng-enter 	{ z-index:888; }
+
+
+@mixin scaledown        {
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+@mixin movefrombottom		{
+  -webkit-animation: moveFromBottom .6s ease both;
+  -moz-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both;
+}
+
+
+@mixin movetotop       {
+  -webkit-animation: moveToTop .7s ease-in-out both;
+  -moz-animation: moveToTop .7s ease-in-out both;
+  animation: moveToTop .7s ease-in-out both;
+}
+@mixin slideinright		{
+  -webkit-animation:slideInRight 0.5s both ease-in;
+  -moz-animation:slideInRight 0.5s both ease-in;
+  animation:slideInRight 0.5s both ease-in;
+}
+
+
+@-webkit-keyframes moveToTop {
+  from { }
+  to { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveToTop{
+  from { }
+  to { -moz-transform: translateY(-100%); }
+}
+@keyframes moveToTop {
+  from { }
+  to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+
+@keyframes slideInRight {
+  from 	{ transform:translateX(100%); }
+  to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+  from 	{ -moz-transform:translateX(100%); }
+  to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+  from 	{ -webkit-transform:translateX(100%); }
+  to 		{ -webkit-transform: translateX(0); }
+}
+
+
+@-webkit-keyframes scaleDown {
+  from { }
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes slideInUp {
+  from 	{ }
+  to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleDown {
+  from { }
+  to { opacity: 0; -webkit-transform: scale(.8); transform: scale(.8); }
+}
+
+
+@-webkit-keyframes moveFromBottom {
+  from { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes slideInUp {
+  from 	{ -moz-transform:translateY(100%); }
+}
+@keyframes moveFromBottom {
+  from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}

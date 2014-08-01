@@ -1,0 +1,15 @@
+<div class="notes">
+<h1>Notes</h1>
+
+<section class="notes-section">
+    <!--<div ng-repeat="note in notes" ng-class="{'row bottomspace': ($index)%3==0}" class="note-container scale-fade">-->
+    <div ng-repeat="note in notes" class="note-container rotate-in">
+        <div class="note-icons">
+            <form ng-submit="trash($index, note.id)">
+                <button><i class="fa fa-trash-o fa-2x"></i></button>
+            </form>
+        </div>
+        <div class="note-description"><textarea ng-model="note.description" ng-change="save(note.id, note.description)"></textarea></div>
+    </div>
+</section>
+</div>
