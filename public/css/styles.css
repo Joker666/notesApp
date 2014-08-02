@@ -716,18 +716,12 @@ body:after {
   transition: all 400ms ease-out;
 }
 /* line 150, ../sass/_modules.scss */
-.note-container p {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-}
-/* line 155, ../sass/_modules.scss */
 .note-container .note-icons {
   width: 100%;
   height: 40px;
 }
-/* line 158, ../sass/_modules.scss */
-.note-container .note-icons button {
+/* line 153, ../sass/_modules.scss */
+.note-container .note-icons .trash, .note-container .note-icons .add {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -743,12 +737,17 @@ body:after {
   transition: all 200ms ease-out;
   margin-top: 1.5%;
 }
-/* line 163, ../sass/_modules.scss */
-.note-container .note-icons button:hover {
+/* line 159, ../sass/_modules.scss */
+.note-container .note-icons .trash:hover {
   color: orangered;
   cursor: pointer;
 }
-/* line 168, ../sass/_modules.scss */
+/* line 163, ../sass/_modules.scss */
+.note-container .note-icons .add:hover {
+  color: mediumspringgreen;
+  cursor: pointer;
+}
+/* line 167, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -758,11 +757,11 @@ body:after {
   padding-left: 0.41667%;
   padding-right: 0.41667%;
 }
-/* line 170, ../sass/_modules.scss */
+/* line 169, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker ul {
   margin-top: 5.5%;
 }
-/* line 173, ../sass/_modules.scss */
+/* line 172, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker li {
   width: 25px;
   height: 25px;
@@ -770,15 +769,15 @@ body:after {
   display: inline-block;
   margin-right: 4%;
 }
-/* line 180, ../sass/_modules.scss */
+/* line 179, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker .selected {
   border: 1px solid #333;
 }
-/* line 185, ../sass/_modules.scss */
+/* line 184, ../sass/_modules.scss */
 .note-container .note-description {
   clear: both;
 }
-/* line 187, ../sass/_modules.scss */
+/* line 186, ../sass/_modules.scss */
 .note-container .note-description textarea {
   background: inherit;
   width: 100%;

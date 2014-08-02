@@ -3,14 +3,26 @@
 
 <section class="notes-section">
     <!--<div ng-repeat="note in notes" ng-class="{'row bottomspace': ($index)%3==0}" class="note-container scale-fade">-->
-    <div change-Background="{{note.id}}" ng-repeat="note in notes" class="note-container rotate-in" ng-style="{background: note.background}">
+    <!--<div change-Background="{{note.id}}" ng-repeat="note in notes" class="note-container rotate-in" ng-style="{background: note.background}">-->
+    <div ng-repeat="note in notes" class="note-container rotate-in" ng-style="{background: note.background}">
         <div class="note-icons">
             <form ng-submit="trash($index, note.id)">
-                <button><i class="fa fa-trash-o fa-2x"></i></button>
+                <button class="trash"><i class="fa fa-trash-o fa-2x"></i></button>
             </form>
             <ng-color-picker selected='note.background'></ng-color-picker>
         </div>
         <div class="note-description"><textarea ng-model="note.description" ng-change="save(note.id, note.description, null)"></textarea></div>
+    </div>
+    <div class="note-container rotate-in" ng-style="{background: newnote.background}" >
+        <div class="note-icons">
+            <form ng-submit="addNote()">
+                <button class="add"><i class="fa fa-plus-square fa-2x"></i></button>
+            </form>
+            <ng-color-picker selected='newnote.background'></ng-color-picker>
+        </div>
+        <div class="note-description">
+            <textarea ng-model="newnote.description" placeholder="description"></textarea>
+        </div>
     </div>
 </section>
 </div>

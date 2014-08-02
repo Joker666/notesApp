@@ -10,10 +10,15 @@ notesApp.directive('changeBackground', function () {
     return {
         restrict: 'A',
         controller: function($scope, $element, $attrs) {
-            $scope.$on('inner::chosen', function(e, data) {
-                $($element).css({ "background": data });
-                $scope.save($attrs.changeBackground, null, data);
-            })
+            console.log($scope.myColor);
+//            $scope.$on('inner::chosen', function(event, data) {
+//                console.log(event);
+//                $($element).css({ "background": data });
+//                if($attrs.changeBackground){
+//                    $scope.save($attrs.changeBackground, null, data);
+//                }
+//                //$scope.save($attrs.changeBackground, null, data);
+//            })
         }
     };
 });
@@ -36,9 +41,11 @@ notesApp.directive('ngColorPicker', function () {
             scope.colors = scope.customizedColors || defaultColors;
             scope.myColor = scope.selected || scope.colors[0];
 
+            //For add notes' initial background
+            scope.selected = scope.myColor;
             scope.pick = function (color) {
                 scope.myColor = color;
-                scope.$emit('inner::chosen', color);
+                scope.selected = color;
             };
         },
         template: '<ul>' +

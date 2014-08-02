@@ -147,23 +147,22 @@
   border: none;
   @include border-radius(15px);
   @include single-transition(all, 400ms, ease-out);
-  p{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: normal;
-  }
   .note-icons{
     width: 100%;
     height: 40px;
-    button{
+    .trash, .add{
       @include span(first 3);
       @include invisible-button();
       @include single-transition(all, 200ms, ease-out);
       margin-top: 1.5%;
-      &:hover{
-        color: orangered;
-        cursor: pointer;
-      }
+    }
+    .trash:hover{
+      color: orangered;
+      cursor: pointer;
+    }
+    .add:hover{
+      color: mediumspringgreen;
+      cursor: pointer;
     }
     ng-color-picker{
       @include span(last 12);
