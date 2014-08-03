@@ -1,28 +1,28 @@
 <?php
 
-//if (!function_exists('heroku_pgsql_database')) {
-//    function heroku_pgsql_database()
-//    {
-//        if (!isset($_SERVER['DATABASE_URL'])) {
-//            return array();
-//        }
-//        $config = parse_url($_SERVER['DATABASE_URL']);
-//        return [
-//            'username' => $config['user'],
-//            'password' => $config['pass'],
-//            'host' => $config['host'],
-//            'port' => $config['port'],
-//            'database' => starts_with($config['path'], '/') ? substr($config['path'], 1) : $config['path'],
-//        ];
-//    }
-//}
+if (!function_exists('heroku_pgsql_database')) {
+    function heroku_pgsql_database()
+    {
+        if (!isset($_SERVER['DATABASE_URL'])) {
+            return array();
+        }
+        $config = parse_url($_SERVER['DATABASE_URL']);
+        return [
+            'username' => $config['user'],
+            'password' => $config['pass'],
+            'host' => $config['host'],
+            'port' => $config['port'],
+            'database' => starts_with($config['path'], '/') ? substr($config['path'], 1) : $config['path'],
+        ];
+    }
+}
 
-$url = parse_url(getenv("DATABASE_URL"));
-
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
+//$url = parse_url(getenv("DATABASE_URL"));
+//
+//$host = $url["host"];
+//$username = $url["user"];
+//$password = $url["pass"];
+//$database = substr($url["path"], 1);
 
 return array(
 
@@ -87,16 +87,15 @@ return array(
 			'prefix'    => '',
 		),
 
-		'pgsql' => array(
-            'driver'   => 'pgsql',
-            'host'     => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
-		),
+        'pgsql' => array_merge(
+            array(
+                'driver' => 'pgsql',
+                'charset' => 'utf8',
+                'prefix' => '',
+                'schema' => 'public',
+            ),
+            heroku_pgsql_database()
+        ),
 
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
