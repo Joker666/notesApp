@@ -1,5 +1,22 @@
 <?php
 
+if (!function_exists('heroku_pgsql_database')) {
+    function heroku_pgsql_database()
+    {
+        if (!isset($_SERVER['DATABASE_URL'])) {
+            return array();
+        }
+        $config = parse_url($_SERVER['DATABASE_URL']);
+        return [
+            'username' => $config['user'],
+            'password' => $config['pass'],
+            'host' => $config['host'],
+            'port' => $config['port'],
+            'database' => starts_with($config['path'], '/') ? substr($config['path'], 1) : $config['path'],
+        ];
+    }
+}
+
 return array(
 
 	/*
