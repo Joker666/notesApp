@@ -9,7 +9,7 @@
             <form ng-submit="trash($index, note.id)">
                 <button class="trash"><i class="fa fa-trash-o fa-2x"></i></button>
             </form>
-            <ng-color-picker selected='note.background'></ng-color-picker>
+            <ng-color-picker selected='note.background' id="{{note.id}}" savebackground="save(id, description, background)"></ng-color-picker>
         </div>
         <div class="note-description"><textarea ng-model="note.description" ng-change="save(note.id, note.description, null)"></textarea></div>
     </div>
@@ -18,7 +18,7 @@
             <form ng-submit="addNote()">
                 <button class="add"><i class="fa fa-plus-square fa-2x"></i></button>
             </form>
-            <ng-color-picker selected='newnote.background'></ng-color-picker>
+            <ng-color-picker selected='newnote.background' ></ng-color-picker>
         </div>
         <div class="note-description">
             <textarea ng-model="newnote.description" placeholder="description"></textarea>

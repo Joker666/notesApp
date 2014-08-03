@@ -34,22 +34,25 @@ notesApp.directive('ngColorPicker', function () {
     return {
         scope: {
             selected: '=',
-            customizedColors: '=colors'
+            customizedColors: '=colors',
+            savebackground: '&'
         },
         restrict: 'AE',
         link: function (scope, element, attr) {
             scope.colors = scope.customizedColors || defaultColors;
             scope.myColor = scope.selected || scope.colors[0];
-
             //For add notes' initial background
             scope.selected = scope.myColor;
             scope.pick = function (color) {
                 scope.myColor = color;
                 scope.selected = color;
+                if(attr.id){
+                    scope.savebackground({id:attr.id, description:null, background:color});
+                }
             };
         },
         template: '<ul>' +
-            '<li ng-repeat="color in colors" ng-class="{selected: (color===myColor)}" ng-click="pick(color)" style="background-color:{{color}};">' +
+            '<li ng-repeat="color in colors" ng-class="{selected: (color===selected)}" ng-click="pick(color)" style="background-color:{{color}};">' +
             '</li>' +
             '</ul>'
     };

@@ -23,7 +23,7 @@ class NoteController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+
 	}
 
 
@@ -34,7 +34,11 @@ class NoteController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		if($note = Note::create(Input::all())){
+            return Response::json(['status' => 200, 'mesg' => 'saved successfully!', 'note' => $note]);
+        }else{
+            return Response::json(['status' => 400, 'mesg' => 'could not create new record!'],400);
+        }
 	}
 
 

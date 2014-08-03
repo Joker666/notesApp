@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5a1be3b4-449e-4ec0-865b-b9c11faca236" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/.sass-cache/25dedda3b269aa6219b22abfe9ca5b0b1d784dd2/_modules.scssc" afterPath="$PROJECT_DIR$/Grunt/.sass-cache/25dedda3b269aa6219b22abfe9ca5b0b1d784dd2/_modules.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Board.php" afterPath="$PROJECT_DIR$/app/models/Board.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/BoardController.php" afterPath="$PROJECT_DIR$/app/controllers/BoardController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Note.php" afterPath="$PROJECT_DIR$/app/models/Note.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/NoteController.php" afterPath="$PROJECT_DIR$/app/controllers/NoteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sass/_modules.scss" afterPath="$PROJECT_DIR$/public/sass/_modules.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/boards.html" afterPath="$PROJECT_DIR$/public/templates/boards.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers.js" afterPath="$PROJECT_DIR$/public/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/directives.js" afterPath="$PROJECT_DIR$/public/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/loading-bar.css" afterPath="$PROJECT_DIR$/public/css/loading-bar.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/notes.html" afterPath="$PROJECT_DIR$/public/templates/notes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services.js" afterPath="$PROJECT_DIR$/public/js/services.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/styles.css" afterPath="$PROJECT_DIR$/public/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,30 +42,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="102" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.0" vertical-offset="873" max-vertical-offset="1606">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.4297408" vertical-offset="477" max-vertical-offset="1210">
-              <folding>
-                <marker date="1406981424774" expanded="false" signature="1706:1733" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="40" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="2508">
+            <state line="18" column="6" selection-start="653" selection-end="653" vertical-scroll-proportion="0.19298245" vertical-offset="198" max-vertical-offset="2024">
               <folding />
             </state>
           </provider>
@@ -68,8 +54,37 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="40" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1166">
+            <state line="34" column="80" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1166">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="31" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="79" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="1034" max-vertical-offset="3256">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="47" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1276">
+              <folding>
+                <marker date="1407029522730" expanded="false" signature="1878:1905" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,26 +92,19 @@
       <file leaf-file-name="notes.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/templates/notes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="109" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726">
+            <state line="17" column="40" selection-start="1086" selection-end="1114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <file leaf-file-name="boards.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/templates/boards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="676" column="0" selection-start="17739" selection-end="20425" vertical-scroll-proportion="0.0" vertical-offset="14484" max-vertical-offset="17424">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="48" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-              <folding />
+            <state line="20" column="37" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+              <folding>
+                <marker date="1407089704435" expanded="true" signature="1074:1160" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,8 +145,6 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_28_202132_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/public/templates/home.html" />
-        <option value="$PROJECT_DIR$/app/models/Note.php" />
-        <option value="$PROJECT_DIR$/app/models/Board.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/public/templates/note.html" />
         <option value="$PROJECT_DIR$/public/templates/login.html" />
@@ -148,19 +154,21 @@
         <option value="$PROJECT_DIR$/public/sass/_base.scss" />
         <option value="$PROJECT_DIR$/app/views/index.php" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/app/controllers/BoardController.php" />
-        <option value="$PROJECT_DIR$/public/templates/boards.html" />
         <option value="$PROJECT_DIR$/public/css/styles.css" />
         <option value="$PROJECT_DIR$/public/sass/_mixins.scss" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_28_202152_create_notes_table.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/NotesTableSeeder.php" />
-        <option value="$PROJECT_DIR$/public/js/controllers.js" />
-        <option value="$PROJECT_DIR$/public/js/services.js" />
-        <option value="$PROJECT_DIR$/app/controllers/NoteController.php" />
-        <option value="$PROJECT_DIR$/public/sass/_modules.scss" />
         <option value="$PROJECT_DIR$/public/css/loading-bar.css" />
-        <option value="$PROJECT_DIR$/public/js/directives.js" />
+        <option value="$PROJECT_DIR$/app/models/Note.php" />
+        <option value="$PROJECT_DIR$/app/controllers/NoteController.php" />
         <option value="$PROJECT_DIR$/public/templates/notes.html" />
+        <option value="$PROJECT_DIR$/public/js/directives.js" />
+        <option value="$PROJECT_DIR$/public/sass/_modules.scss" />
+        <option value="$PROJECT_DIR$/public/templates/boards.html" />
+        <option value="$PROJECT_DIR$/app/models/Board.php" />
+        <option value="$PROJECT_DIR$/app/controllers/BoardController.php" />
+        <option value="$PROJECT_DIR$/public/js/services.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -212,9 +220,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -242,7 +250,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,6 +486,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -550,11 +558,15 @@
       <created>1406895672584</created>
       <updated>1406895672584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed the way I was changing notes' colors. Stopped using event for that.">
+      <created>1406982409463</created>
+      <updated>1406982409463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -565,7 +577,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27746212" sideWeight="0.49962935" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28125" sideWeight="0.49962935" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -594,7 +606,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Note Color Change working :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Note Color Change working :)" />
+    <MESSAGE value="Changed the way I was changing notes' colors. Stopped using event for that." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the way I was changing notes' colors. Stopped using event for that." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -602,9 +615,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/templates/boards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="101" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="550">
-          <folding />
-        </state>
+        <state line="12" column="101" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="550" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BoardController.php">
@@ -727,16 +738,6 @@
         <state line="22" column="57" selection-start="605" selection-end="605" vertical-scroll-proportion="0.2821497" vertical-offset="315" max-vertical-offset="1034" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Note.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="38" selection-start="138" selection-end="138" vertical-scroll-proportion="0.29558542" vertical-offset="0" max-vertical-offset="521" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Board.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="173" selection-end="173" vertical-scroll-proportion="0.42226487" vertical-offset="0" max-vertical-offset="521" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="21" selection-start="533" selection-end="609" vertical-scroll-proportion="0.6756238" vertical-offset="132" max-vertical-offset="748" />
@@ -757,19 +758,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1100" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="681" selection-end="681" vertical-scroll-proportion="0.55853313" vertical-offset="0" max-vertical-offset="709" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="70" selection-start="312" selection-end="312" vertical-scroll-proportion="0.17571884" vertical-offset="0" max-vertical-offset="626" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_07_28_202144_create_boards_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="349" selection-end="349" vertical-scroll-proportion="0.32967034" vertical-offset="0" max-vertical-offset="1001" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/NotesTableSeeder.php">
@@ -777,54 +768,19 @@
         <state line="16" column="41" selection-start="386" selection-end="386" vertical-scroll-proportion="0.34307992" vertical-offset="0" max-vertical-offset="1026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_07_28_202152_create_notes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="39" selection-start="534" selection-end="534" vertical-scroll-proportion="0.3859649" vertical-offset="0" max-vertical-offset="1026" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="1.5750487" vertical-offset="782" max-vertical-offset="3388">
-          <folding />
-        </state>
+        <state line="109" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="1.5750487" vertical-offset="782" max-vertical-offset="3388" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/sass/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="30" selection-start="5240" selection-end="5240" vertical-scroll-proportion="2.6900585" vertical-offset="892" max-vertical-offset="3894">
-          <folding />
-        </state>
+        <state line="166" column="30" selection-start="5240" selection-end="5240" vertical-scroll-proportion="2.6900585" vertical-offset="892" max-vertical-offset="3894" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BoardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="38" selection-start="883" selection-end="883" vertical-scroll-proportion="0.4853801" vertical-offset="624" max-vertical-offset="1782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NoteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="59" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.5068226" vertical-offset="1152" max-vertical-offset="2420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/boards.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="101" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/_modules.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="31" selection-start="3204" selection-end="3204" vertical-scroll-proportion="0.0" vertical-offset="3205" max-vertical-offset="4356">
-          <folding />
-        </state>
+        <state line="2" column="10" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1892" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/loading-bar.css">
@@ -832,54 +788,113 @@
         <state line="64" column="12" selection-start="1378" selection-end="1378" vertical-scroll-proportion="1.9208732" vertical-offset="0" max-vertical-offset="2420" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="676" column="0" selection-start="17739" selection-end="20425" vertical-scroll-proportion="0.0" vertical-offset="14484" max-vertical-offset="17424">
+        <state line="689" column="20" selection-start="18071" selection-end="18071" vertical-scroll-proportion="0.6569201" vertical-offset="14484" max-vertical-offset="17424" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_07_28_202152_create_notes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="37" selection-start="377" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="902" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Note.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/NoteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="47" selection-start="622" selection-end="622" vertical-scroll-proportion="0.32163742" vertical-offset="462" max-vertical-offset="2508">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+    <entry file="file://$PROJECT_DIR$/public/sass/_modules.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1166">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="40" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2508">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="102" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.0" vertical-offset="873" max-vertical-offset="1606">
+        <state line="135" column="57" selection-start="2801" selection-end="2801" vertical-scroll-proportion="2.0562415" vertical-offset="1471" max-vertical-offset="4664">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/notes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="109" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726">
+        <state line="17" column="40" selection-start="1086" selection-end="1114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/boards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="37" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+          <folding>
+            <marker date="1407089704435" expanded="true" signature="1074:1160" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="48" selection-start="947" selection-end="947" vertical-scroll-proportion="0.6639232" vertical-offset="0" max-vertical-offset="729">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="31" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_07_28_202144_create_boards_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="91" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="902">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.4297408" vertical-offset="477" max-vertical-offset="1210">
+        <state line="43" column="47" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1276">
           <folding>
-            <marker date="1406981424774" expanded="false" signature="1706:1733" placeholder="..." />
+            <marker date="1407029522730" expanded="false" signature="1878:1905" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BoardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="92" selection-start="311" selection-end="311" vertical-scroll-proportion="0.21442495" vertical-offset="66" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="80" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1166">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Board.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="68" selection-start="104" selection-end="104" vertical-scroll-proportion="0.064327486" vertical-offset="0" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="79" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="1034" max-vertical-offset="3256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="6" selection-start="653" selection-end="653" vertical-scroll-proportion="0.19298245" vertical-offset="198" max-vertical-offset="2024">
+          <folding />
         </state>
       </provider>
     </entry>

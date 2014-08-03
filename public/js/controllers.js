@@ -10,7 +10,7 @@ notesApp.controller("LoginController", function($scope, $state, AuthenticationSe
     };
 });
 
-notesApp.controller('BoardsController', function(BoardsService, $scope, AuthenticationService, $state, $timeout){
+notesApp.controller('BoardsController', function(BoardsService, $scope, AuthenticationService, $state, $timeout, UserInfo){
     $scope.pageClass = 'page-boards';
     $scope.logout = function() {
         AuthenticationService.logout().success(function() {
@@ -18,12 +18,13 @@ notesApp.controller('BoardsController', function(BoardsService, $scope, Authenti
         });
     };
 
-    $scope.boards = [];
-    BoardsService.getData().then(function (data) {
-        angular.forEach(data.boards, function (value) {
-            $scope.boards.push(value);
+    $scope.getBoards = function(){
+        BoardsService.getData().then(function (data) {
+            $scope.boards = data.boards;
         });
-    });
+    }
+
+    $scope.getBoards();
 
 
     var saveTimeoutForBoards;
@@ -35,17 +36,27 @@ notesApp.controller('BoardsController', function(BoardsService, $scope, Authenti
             });
         }, 1000);
     }
+
+    $scope.addBoard = function(){
+        BoardsService.addNew(UserInfo.getUser().id, $scope.newboard.title, $scope.newboard.description).then(function(data){
+            console.log('board added');
+            $scope.boards.push(data.board);
+            $scope.newboard.description = '';
+            $scope.newboard.title = '';
+        });
+    }
 });
 
 notesApp.controller('NotesController', function($scope, NotesService, $stateParams, $timeout){
     $scope.pageClass = 'page-notes';
 
-    $scope.notes = [];
-    NotesService.getData($stateParams['boardId']).then(function (data) {
-        angular.forEach(data.notes, function (value) {
-            $scope.notes.push(value);
+    $scope.getNotes = function(){
+        NotesService.getData($stateParams['boardId']).then(function (data) {
+            $scope.notes = data.notes;
         });
-    });
+    }
+
+    $scope.getNotes();
 
     $scope.trash = function(idx, id){
         $scope.notes.splice(idx, 1);
@@ -65,4 +76,12 @@ notesApp.controller('NotesController', function($scope, NotesService, $statePara
         }, 1000);
     }
 
+    $scope.addNote = function(){
+        NotesService.addNew($stateParams['boardId'], $scope.newnote.description, $scope.newnote.background).then(function(data){
+            console.log('note added');
+            $scope.notes.push(data.note);
+            $scope.newnote.description = '';
+            $scope.newnote.background = '#F5FFFA';
+        });
+    }
 })

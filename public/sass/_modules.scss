@@ -87,23 +87,25 @@
       @include border-radius(15px);
       background: mintcream;
       .title-container{
-        -webkit-box-shadow: 0 8px 6px -6px black;
-        -moz-box-shadow: 0 8px 6px -6px black;
-        box-shadow: 0 8px 6px -6px black;
+        -webkit-box-shadow: 0 8px 6px -6px gray;
+        -moz-box-shadow: 0 8px 6px -6px grey;
+        box-shadow: 0 8px 6px -6px grey;
         padding-bottom: 1%;
         input{
+          background: inherit;
           border: none;
           margin-left: 2%;
           font-size: 1.5rem;
+          width: auto;
         }
         a{
           color: inherit;
-        }
-        i{
-          margin-top: 3%;
-          @include span(last 1);
-          cursor: pointer;
-          margin-right: 3%;
+          i{
+            margin-top: 3%;
+            @include span(last 1);
+            cursor: pointer;
+            margin-right: 3%;
+          }
         }
         .fa-2x-add{
           @include single-transition(all, 300ms, ease-out);
@@ -119,9 +121,21 @@
       .board-description{
         padding-top: 4%;
         textarea{
+          background: inherit;
           width: 100%;
           height: 155px;
           border: none;
+        }
+      }
+      button{
+        @include invisible-button();
+        margin-top: 1%;
+        @include span(last 3);
+        cursor: pointer;
+        margin-right: 1%;
+        @include single-transition(all, 200ms, ease-out);
+        &:hover{
+          color: mediumspringgreen;
         }
       }
     }

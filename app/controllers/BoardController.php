@@ -11,7 +11,7 @@ class BoardController extends \BaseController {
 	{
         $user = Auth::user();
         $user->load('boards');
-        return Response::json(['status' => 200,'boards' => $user->boards]);
+        return Response::json(['status' => 200,'boards' => $user->boards, 'user' => $user]);
 	}
 
 
@@ -22,7 +22,11 @@ class BoardController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        if($board = Board::create(Input::all())){
+            return Response::json(['status' => 200, 'mesg' => 'saved successfully!', 'board' => $board]);
+        }else{
+            return Response::json(['status' => 400, 'mesg' => 'could not create new record!'],400);
+        }
 	}
 
 

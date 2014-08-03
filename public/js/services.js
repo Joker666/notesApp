@@ -44,12 +44,24 @@ notesApp.factory("AuthenticationService", function($http, SessionService) {
     };
 });
 
-notesApp.factory('BoardsService', function($http, $q){
+notesApp.service('UserInfo', function(){
+    var User = {};
+    this.setUser = function(data){
+        User.id = data['id'];
+        User.email = data['email'];
+    }
+    this.getUser = function(){
+        return User;
+    }
+});
+
+notesApp.factory('BoardsService', function($http, $q, UserInfo){
     return {
         getData: function(){
             var defer = $q.defer();
             $http.get("/boards").success(function (data) {
                     defer.resolve(data);
+                    UserInfo.setUser(data.user);
                 }
             ).error(function () {
                     defer.reject('An error has occurred :(');
@@ -57,6 +69,20 @@ notesApp.factory('BoardsService', function($http, $q){
             );
             return defer.promise;
 
+        },
+        addNew: function(id, title, description) {
+            var defer = $q.defer();
+            var url = "/boards";
+            var params = {user_id: id, title: title, description: description};
+
+            $http.post(url, params).success(function (data) {
+                    defer.resolve(data);
+                }
+            ).error(function () {
+                    defer.reject('An error has occurred :(');
+                }
+            );
+            return defer.promise;
         },
         update: function (boardId, title, description) {
             var defer = $q.defer();
@@ -84,15 +110,23 @@ notesApp.factory('NotesService', function($http, $q){
             return defer.promise;
 
         },
-        removeData: function(boardId, noteId){
+        addNew: function(boardId, description, background) {
             var defer = $q.defer();
-            $http.delete("/boards/" + boardId + '/notes/' + noteId).success(function (data) {
+            var url = "/boards/" + boardId + '/notes';
+            var params = {board_id: boardId, description: description, background: background};
+
+            $http.post(url, params).success(function (data) {
                     defer.resolve(data);
                 }
             ).error(function () {
                     defer.reject('An error has occurred :(');
                 }
             );
+            return defer.promise;
+        },
+        removeData: function(boardId, noteId){
+            var defer = $q.defer();
+            $http.delete("/boards/" + boardId + '/notes/' + noteId).success(defer.resolve).error(defer.reject);
             return defer.promise;
 
         },

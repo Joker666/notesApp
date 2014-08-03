@@ -1,7 +1,7 @@
 <?php
 
 class Board extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = ['id', 'user_id', 'title', 'description'];
 
     public function user()
     {
