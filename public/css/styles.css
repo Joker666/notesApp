@@ -624,60 +624,64 @@ body:after {
   padding-bottom: 1%;
 }
 /* line 94, ../sass/_modules.scss */
+.home section .board-container .title-container .board-icons {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: right;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+}
+/* line 97, ../sass/_modules.scss */
 .home section .board-container .title-container input {
   background: inherit;
   border: none;
   margin-left: 2%;
   font-size: 1.5rem;
-  width: auto;
+  width: 71%;
 }
-/* line 101, ../sass/_modules.scss */
+/* line 104, ../sass/_modules.scss */
 .home section .board-container .title-container a {
+  margin-left: 2%;
+  margin-bottom: 1%;
   color: inherit;
+  -moz-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
 }
-/* line 103, ../sass/_modules.scss */
-.home section .board-container .title-container a i {
-  margin-top: 3%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 4.16667%;
-  float: right;
-  padding-left: 0.41667%;
-  padding-right: 0.41667%;
+/* line 109, ../sass/_modules.scss */
+.home section .board-container .title-container a:hover {
+  color: mediumspringgreen;
+}
+/* line 119, ../sass/_modules.scss */
+.home section .board-container .title-container .trashBoard {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  margin-left: 10%;
   cursor: pointer;
-  margin-right: 3%;
+  -moz-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
 }
-/* line 110, ../sass/_modules.scss */
-.home section .board-container .title-container .fa-2x-add {
-  -moz-transition: all 300ms ease-out;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+/* line 124, ../sass/_modules.scss */
+.home section .board-container .title-container .trashBoard:hover {
+  color: orangered;
 }
-/* line 113, ../sass/_modules.scss */
-.home section .board-container .title-container .fa-2x-remove {
-  -moz-transition: all 300ms ease-out;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-}
-/* line 116, ../sass/_modules.scss */
-.home section .board-container .title-container .getpositioned {
-  margin-right: 5%;
-  margin-top: 1%;
-}
-/* line 121, ../sass/_modules.scss */
+/* line 129, ../sass/_modules.scss */
 .home section .board-container .board-description {
   padding-top: 4%;
 }
-/* line 123, ../sass/_modules.scss */
+/* line 131, ../sass/_modules.scss */
 .home section .board-container .board-description textarea {
   background: inherit;
   width: 100%;
   height: 155px;
   border: none;
 }
-/* line 130, ../sass/_modules.scss */
-.home section .board-container button {
+/* line 139, ../sass/_modules.scss */
+.home section .board-container form button {
   background: none !important;
   border: none;
   padding: 0 !important;
@@ -695,12 +699,12 @@ body:after {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
-/* line 137, ../sass/_modules.scss */
-.home section .board-container button:hover {
+/* line 146, ../sass/_modules.scss */
+.home section .board-container form button:hover {
   color: mediumspringgreen;
 }
 
-/* line 145, ../sass/_modules.scss */
+/* line 155, ../sass/_modules.scss */
 .notes h1 {
   color: whitesmoke;
   -moz-box-sizing: border-box;
@@ -716,12 +720,12 @@ body:after {
   margin-bottom: 2%;
 }
 
-/* line 153, ../sass/_modules.scss */
+/* line 163, ../sass/_modules.scss */
 .notes-section {
   clear: both;
 }
 
-/* line 156, ../sass/_modules.scss */
+/* line 166, ../sass/_modules.scss */
 .note-container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -741,12 +745,12 @@ body:after {
   -webkit-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-/* line 164, ../sass/_modules.scss */
+/* line 174, ../sass/_modules.scss */
 .note-container .note-icons {
   width: 100%;
   height: 40px;
 }
-/* line 167, ../sass/_modules.scss */
+/* line 177, ../sass/_modules.scss */
 .note-container .note-icons .trash, .note-container .note-icons .add {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -763,17 +767,17 @@ body:after {
   transition: all 200ms ease-out;
   margin-top: 1.5%;
 }
-/* line 173, ../sass/_modules.scss */
+/* line 183, ../sass/_modules.scss */
 .note-container .note-icons .trash:hover {
   color: orangered;
   cursor: pointer;
 }
-/* line 177, ../sass/_modules.scss */
+/* line 187, ../sass/_modules.scss */
 .note-container .note-icons .add:hover {
   color: mediumspringgreen;
   cursor: pointer;
 }
-/* line 181, ../sass/_modules.scss */
+/* line 191, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -783,11 +787,11 @@ body:after {
   padding-left: 0.41667%;
   padding-right: 0.41667%;
 }
-/* line 183, ../sass/_modules.scss */
+/* line 193, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker ul {
   margin-top: 5.5%;
 }
-/* line 186, ../sass/_modules.scss */
+/* line 196, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker li {
   width: 25px;
   height: 25px;
@@ -795,15 +799,15 @@ body:after {
   display: inline-block;
   margin-right: 4%;
 }
-/* line 193, ../sass/_modules.scss */
+/* line 203, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker .selected {
   border: 1px solid #333;
 }
-/* line 198, ../sass/_modules.scss */
+/* line 208, ../sass/_modules.scss */
 .note-container .note-description {
   clear: both;
 }
-/* line 200, ../sass/_modules.scss */
+/* line 210, ../sass/_modules.scss */
 .note-container .note-description textarea {
   background: inherit;
   width: 100%;

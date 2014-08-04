@@ -5,18 +5,24 @@
 
 <section>
     <!--<div ng-repeat="board in boards" ng-class="{'row bottomspace': ($index)%3==0}" class="board-container">-->
-    <div ng-repeat="board in boards" class="board-container">
+    <div ng-repeat="board in boards" class="board-container scale-fade">
         <div class="title-container">
-            <a ui-sref="boards.notes({ boardId: board.id })">
-                <i class="fa fa-arrow-right" ng-class="{'fa-2x getpositioned': obj.value1 == 'value'}" ng-mouseenter="obj.value1 = 'value'" ng-mouseleave="obj.value1 = ''"></i>
-            </a>
             <input type="text" ng-model="board.title" ng-change="save(board.id, board.title, null)"/>
+            <section class="board-icons">
+                <button class="trashBoard">
+                    <i class="fa fa-trash-o fa-2x"></i>
+                </button>
+                <a ui-sref="boards.notes({ boardId: board.id })">
+                    <!--<i class="fa fa-arrow-right" ng-class="{'fa-2x getpositioned': obj.value1 == 'value'}" ng-mouseenter="obj.value1 = 'value'" ng-mouseleave="obj.value1 = ''"></i>-->
+                    <i class="fa fa-folder-o fa-2x"></i>
+                </a>
+            </section>
         </div>
         <div class="board-description">
             <textarea ng-model="board.description" ng-change="save(board.id, null, board.description)"></textarea>
         </div>
     </div>
-    <div class="board-container">
+    <div class="board-container scale-fade">
         <div class="title-container">
             <form ng-submit="addBoard()">
                 <button>

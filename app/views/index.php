@@ -14,6 +14,8 @@
     <script src="/js/lib/angular-ui-router.js"></script>
     <script src="/js/lib/angular-animate.js"></script>
     <script src="/js/lib/angular-resource.js"></script>
+    <script src="//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.min.js"></script>
+    <script src="//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.tpl.min.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/services.js"></script>
     <script src="/js/controllers.js"></script>

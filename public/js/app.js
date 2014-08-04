@@ -6,7 +6,8 @@ var notesApp = angular.module('notesApp', [
     'angular-loading-bar',
     'infinite-scroll',
     'ngAnimate',
-    'ngResource'
+    'ngResource',
+    'mgcrea.ngStrap.modal'
 ]);
 
 notesApp.config(function($stateProvider, $urlRouterProvider){

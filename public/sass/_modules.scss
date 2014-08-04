@@ -91,31 +91,39 @@
         -moz-box-shadow: 0 8px 6px -6px grey;
         box-shadow: 0 8px 6px -6px grey;
         padding-bottom: 1%;
+        .board-icons{
+          @include span(last 6);
+        }
         input{
           background: inherit;
           border: none;
           margin-left: 2%;
           font-size: 1.5rem;
-          width: auto;
+          width: 71%;
         }
         a{
+          margin-left: 2%;
+          margin-bottom: 1%;
           color: inherit;
-          i{
-            margin-top: 3%;
-            @include span(last 1);
-            cursor: pointer;
-            margin-right: 3%;
+          @include single-transition(all, 200ms, ease-out);
+          &:hover{
+            color: mediumspringgreen;
           }
         }
-        .fa-2x-add{
-          @include single-transition(all, 300ms, ease-out);
-        }
-        .fa-2x-remove{
-          @include single-transition(all, 300ms, ease-out);
-        }
-        .getpositioned{
-          margin-right: 5%;
-          margin-top: 1%;
+//        .fa-2x-add{
+//          @include single-transition(all, 300ms, ease-out);
+//        }
+//        .fa-2x-remove{
+//          @include single-transition(all, 300ms, ease-out);
+//        }
+        .trashBoard{
+          @include invisible-button();
+          margin-left: 10%;
+          cursor: pointer;
+          @include single-transition(all, 200ms, ease-out);
+          &:hover{
+            color: orangered;
+          }
         }
       }
       .board-description{
@@ -127,15 +135,17 @@
           border: none;
         }
       }
-      button{
-        @include invisible-button();
-        margin-top: 1%;
-        @include span(last 3);
-        cursor: pointer;
-        margin-right: 1%;
-        @include single-transition(all, 200ms, ease-out);
-        &:hover{
-          color: mediumspringgreen;
+      form{
+        button{
+          @include invisible-button();
+          margin-top: 1%;
+          @include span(last 3);
+          cursor: pointer;
+          margin-right: 1%;
+          @include single-transition(all, 200ms, ease-out);
+          &:hover{
+            color: mediumspringgreen;
+          }
         }
       }
     }
