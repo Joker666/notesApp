@@ -2,13 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1be3b4-449e-4ec0-865b-b9c11faca236" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/AuthenticationService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/BoardsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/BoardsService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/LoginController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/NotesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/NotesService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/SessionService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/UserInfo.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/services.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/.sass-cache/25dedda3b269aa6219b22abfe9ca5b0b1d784dd2/_modules.scssc" afterPath="$PROJECT_DIR$/Grunt/.sass-cache/25dedda3b269aa6219b22abfe9ca5b0b1d784dd2/_modules.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sass/_modules.scss" afterPath="$PROJECT_DIR$/public/sass/_modules.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/arguments.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/arguments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artisan" afterPath="$PROJECT_DIR$/artisan" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/async/lib/async.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/async/lib/async.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/async/lib/async.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/async/lib/async.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/async/lib/async.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/async/lib/async.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/node_modules/pako/benchmark/benchmark.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/node_modules/pako/benchmark/benchmark.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/optimist/test/_/bin.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/optimist/test/_/bin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/rimraf/bin.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/rimraf/bin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/boards.html" afterPath="$PROJECT_DIR$/public/templates/boards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/coffee-script/bin/cake" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/coffee-script/bin/cake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/choice.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/choice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/bin-version-check/cli.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/bin-version-check/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/bin-version-check/node_modules/bin-version/node_modules/find-versions/cli.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/bin-version-check/node_modules/bin-version/node_modules/find-versions/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/has-ansi/cli.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/has-ansi/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/strip-ansi/cli.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/strip-ansi/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/supports-color/cli.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/supports-color/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/cli.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/cli.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/coffee-script/bin/coffee" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/coffee-script/bin/coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/constants.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/exit/test/fixtures/create-files.sh" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/exit/test/fixtures/create-files.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/directives.js" afterPath="$PROJECT_DIR$/public/js/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/bin/esparse.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/bin/esparse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/bin/esvalidate.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/bin/esvalidate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/exec.sh" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/exec.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/help.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/help.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.php" afterPath="$PROJECT_DIR$/app/views/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/bin/js-yaml.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/bin/js-yaml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/noptify/node_modules/nopt/examples/my-program.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/noptify/node_modules/nopt/examples/my-program.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/nopt/examples/my-program.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/nopt/examples/my-program.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/nargs.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/nargs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/noptify/node_modules/nopt/bin/nopt.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/noptify/node_modules/nopt/bin/nopt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/nopt/bin/nopt.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/nopt/bin/nopt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/parents.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/parents.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/parser.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/prefix_chars.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/prefix_chars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/queue.php" afterPath="$PROJECT_DIR$/app/config/queue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/run-tests.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/run-tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/test/run-tests.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/test/run-tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/bin-version-check/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/bin-version-check/node_modules/semver/bin/semver" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/styles.css" afterPath="$PROJECT_DIR$/public/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/sub_commands.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/sub_commands.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/sum.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/sum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/tmp/test-all.sh" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-compass/node_modules/tmp/test-all.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-close-after-write.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-close-after-write.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-convenience-methods.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-convenience-methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary-fail.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary-fail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-from-string.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-from-string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-invalid-input.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-invalid-input.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/ignored/test-zlib-params.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/ignored/test-zlib-params.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-random-byte-pipes.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-random-byte-pipes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-write-after-flush.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-write-after-flush.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-zero-byte.js" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-zero-byte.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/bin/tiny-lr" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/bin/tiny-lr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/bin/update-livereload" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/bin/update-livereload" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/which/bin/which" afterPath="$PROJECT_DIR$/Grunt/node_modules/grunt/node_modules/which/bin/which" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NotesApp.iws" />
@@ -37,19 +101,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="33" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="2024">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boards.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="48" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.6731055" vertical-offset="119" max-vertical-offset="836">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boards.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/templates/boards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="59" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.8927536" vertical-offset="0" max-vertical-offset="968">
+            <state line="13" column="25" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="968">
               <folding />
             </state>
           </provider>
@@ -58,52 +131,7 @@
       <file leaf-file-name="_modules.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/sass/_modules.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="18" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="4884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="25" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notes.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/templates/notes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="58" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="726">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/sass/_base.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="11" selection-start="1002" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="3388">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="29" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0" vertical-offset="1078" max-vertical-offset="3256">
+            <state line="87" column="0" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0" vertical-offset="1752" max-vertical-offset="4884">
               <folding />
             </state>
           </provider>
@@ -122,11 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/local/database.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_07_27_100910_create_users_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_07_27_100857_create_notes_table.php" />
         <option value="$PROJECT_DIR$/bootstrap/start.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/views/index.html" />
@@ -150,7 +173,6 @@
         <option value="$PROJECT_DIR$/public/templates/boards.notes.html" />
         <option value="$PROJECT_DIR$/public/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/public/sass/_base.scss" />
         <option value="$PROJECT_DIR$/public/css/styles.css" />
         <option value="$PROJECT_DIR$/public/sass/_mixins.scss" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_28_202152_create_notes_table.php" />
@@ -159,17 +181,26 @@
         <option value="$PROJECT_DIR$/app/models/Note.php" />
         <option value="$PROJECT_DIR$/app/controllers/NoteController.php" />
         <option value="$PROJECT_DIR$/public/templates/notes.html" />
-        <option value="$PROJECT_DIR$/public/js/directives.js" />
         <option value="$PROJECT_DIR$/app/models/Board.php" />
         <option value="$PROJECT_DIR$/app/controllers/BoardController.php" />
-        <option value="$PROJECT_DIR$/public/js/services.js" />
-        <option value="$PROJECT_DIR$/public/js/controllers.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
-        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="/HTML Fragment (directives.js:887).html" />
+        <option value="$PROJECT_DIR$/public/sass/_base.scss" />
         <option value="$PROJECT_DIR$/public/sass/_modules.scss" />
-        <option value="$PROJECT_DIR$/app/views/index.php" />
         <option value="$PROJECT_DIR$/public/templates/boards.html" />
+        <option value="$PROJECT_DIR$/public/js/directives.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/BoardsController.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/NotesController.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/LoginController.js" />
+        <option value="$PROJECT_DIR$/public/js/services/NotesService.js" />
+        <option value="$PROJECT_DIR$/public/js/services/BoardsService.js" />
+        <option value="$PROJECT_DIR$/public/js/services/AuthenticationService.js" />
+        <option value="$PROJECT_DIR$/public/js/services.js" />
+        <option value="$PROJECT_DIR$/public/js/services/SessionService.js" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/app/views/index.php" />
       </list>
     </option>
   </component>
@@ -220,10 +251,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="x" value="278" />
+    <option name="y" value="209" />
+    <option name="width" value="1356" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -351,21 +382,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,122 +422,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seeds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotesApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -525,7 +430,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -541,6 +446,7 @@
       <recent name="$PROJECT_DIR$/Grunt" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js/services" />
       <recent name="$PROJECT_DIR$/Grunt" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/js" />
@@ -603,22 +509,26 @@
       <created>1407100639285</created>
       <updated>1407100639285</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Going to add modal now :)">
+      <created>1407191280125</created>
+      <updated>1407191280125</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="278" y="209" width="1356" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16603774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24115044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2626539" sideWeight="0.5003706" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30587122" sideWeight="0.49962935" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32402235" sideWeight="0.49962935" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -650,77 +560,13 @@
     <MESSAGE value="Changed the way I was changing notes' colors. Stopped using event for that." />
     <MESSAGE value="Color changing works on database too. Adding board works without animation. Todo : remove board" />
     <MESSAGE value="deplying to herokui, db connectivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="deplying to herokui, db connectivity" />
+    <MESSAGE value="Going to add modal now :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Going to add modal now :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/BoardsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BoardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="482526" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/loading-bar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6512" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/underscore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8918919" vertical-offset="462" max-vertical-offset="27302" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1012" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grunt/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grunt/gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="415" selection-end="415" vertical-scroll-proportion="0.80365294" vertical-offset="0" max-vertical-offset="638" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grunt/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="112" selection-end="112" vertical-scroll-proportion="0.13685848" vertical-offset="0" max-vertical-offset="643" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="202048" />
@@ -734,11 +580,6 @@
     <entry file="file://$PROJECT_DIR$/public/js/lib/angular-resource.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13750" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="137" selection-end="137" vertical-scroll-proportion="0.40848807" vertical-offset="0" max-vertical-offset="377" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/sass/_layout.scss">
@@ -786,16 +627,6 @@
         <state line="16" column="41" selection-start="386" selection-end="386" vertical-scroll-proportion="0.34307992" vertical-offset="0" max-vertical-offset="1026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="30" selection-start="5240" selection-end="5240" vertical-scroll-proportion="2.6900585" vertical-offset="892" max-vertical-offset="3894" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1892" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/loading-bar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="12" selection-start="1378" selection-end="1378" vertical-scroll-proportion="1.9208732" vertical-offset="0" max-vertical-offset="2420" />
@@ -814,11 +645,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/Note.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="1" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NoteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="47" selection-start="622" selection-end="622" vertical-scroll-proportion="0.32163742" vertical-offset="462" max-vertical-offset="2508" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
@@ -861,68 +687,175 @@
         <state line="19" column="1" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="1496" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/directives.js">
+    <entry file="file://$PROJECT_DIR$/public/sass/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="47" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1276" />
+        <state line="170" column="35" selection-start="5353" selection-end="5353" vertical-scroll-proportion="0.81073827" vertical-offset="3136" max-vertical-offset="3894" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="17" selection-end="17" vertical-scroll-proportion="0.029530201" vertical-offset="22" max-vertical-offset="1892" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2736" vertical-offset="2046" max-vertical-offset="3212" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.27586207" vertical-offset="176" max-vertical-offset="814" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.9310345" vertical-offset="594" max-vertical-offset="2002" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.4288" vertical-offset="1518" max-vertical-offset="2860" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3212" />
+        <state line="6" column="27" selection-start="174" selection-end="174" vertical-scroll-proportion="0.2112" vertical-offset="0" max-vertical-offset="3212" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services.js">
+    <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="29" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0" vertical-offset="968" max-vertical-offset="3256">
+        <state line="26" column="35" selection-start="837" selection-end="845" vertical-scroll-proportion="0.50491804" vertical-offset="264" max-vertical-offset="902" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artisan">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="67" selection-start="1658" selection-end="1658" vertical-scroll-proportion="-0.026239067" vertical-offset="854" max-vertical-offset="1540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/NoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="33" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="2024">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="11" selection-start="1002" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="3388">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+        <state line="100" column="46" selection-start="2063" selection-end="2063" vertical-scroll-proportion="1.9940565" vertical-offset="858" max-vertical-offset="2508">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/notes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="726">
+        <state line="19" column="19" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.62109953" vertical-offset="0" max-vertical-offset="726">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.php">
+    <entry file="file://$PROJECT_DIR$/public/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+        <state line="7" column="15" selection-start="137" selection-end="137" vertical-scroll-proportion="0.2244898" vertical-offset="0" max-vertical-offset="686">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/_modules.scss">
+    <entry file="file://$PROJECT_DIR$/public/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="18" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="4884">
+        <state line="123" column="17" selection-start="2476" selection-end="2476" vertical-scroll-proportion="1.3848397" vertical-offset="1756" max-vertical-offset="3388">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/BoardsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="3" selection-start="1175" selection-end="1175" vertical-scroll-proportion="1.1441307" vertical-offset="0" max-vertical-offset="902">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/NotesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="2" selection-start="1272" selection-end="1272" vertical-scroll-proportion="1.2095096" vertical-offset="0" max-vertical-offset="946">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/LoginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="3" selection-start="346" selection-end="346" vertical-scroll-proportion="0.32069972" vertical-offset="0" max-vertical-offset="686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="283" selection-end="283" vertical-scroll-proportion="0.03268945" vertical-offset="0" max-vertical-offset="924">
+          <folding>
+            <marker date="1409848393142" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/NotesService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="3" selection-start="1612" selection-end="1612" vertical-scroll-proportion="1.4383358" vertical-offset="0" max-vertical-offset="1100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/BoardsService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="3" selection-start="1320" selection-end="1320" vertical-scroll-proportion="1.2507288" vertical-offset="0" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/AuthenticationService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="3" selection-start="857" selection-end="857" vertical-scroll-proportion="0.96209913" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/SessionService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="348" selection-end="348" vertical-scroll-proportion="0.38483965" vertical-offset="0" max-vertical-offset="686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/UserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="228" selection-end="228" vertical-scroll-proportion="0.28862974" vertical-offset="0" max-vertical-offset="686">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/boards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="59" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.8927536" vertical-offset="0" max-vertical-offset="968">
+        <state line="13" column="25" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="968">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sass/_modules.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0" vertical-offset="1686" max-vertical-offset="4884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="48" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.6731055" vertical-offset="119" max-vertical-offset="836">
           <folding />
         </state>
       </provider>

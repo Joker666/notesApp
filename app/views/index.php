@@ -14,11 +14,17 @@
     <script src="/js/lib/angular-ui-router.js"></script>
     <script src="/js/lib/angular-animate.js"></script>
     <script src="/js/lib/angular-resource.js"></script>
-    <script src="//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.min.js"></script>
-    <script src="//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.tpl.min.js"></script>
+
+
     <script src="/js/app.js"></script>
-    <script src="/js/services.js"></script>
-    <script src="/js/controllers.js"></script>
+    <script src="/js/services/SessionService.js"></script>
+    <script src="/js/services/AuthenticationService.js"></script>
+    <script src="/js/services/UserInfo.js"></script>
+    <script src="/js/services/BoardsService.js"></script>
+    <script src="/js/services/NotesService.js"></script>
+    <script src="/js/controllers/LoginController.js"></script>
+    <script src="/js/controllers/BoardsController.js"></script>
+    <script src="/js/controllers/NotesController.js"></script>
     <script src="/js/directives.js"></script>
 </head>
 <body>

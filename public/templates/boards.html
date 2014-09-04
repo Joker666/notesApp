@@ -9,7 +9,7 @@
         <div class="title-container">
             <input type="text" ng-model="board.title" ng-change="save(board.id, board.title, null)"/>
             <section class="board-icons">
-                <button class="trashBoard">
+                <button class="trashBoard" ng-click='toggleModal()'>
                     <i class="fa fa-trash-o fa-2x"></i>
                 </button>
                 <a ui-sref="boards.notes({ boardId: board.id })">

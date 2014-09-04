@@ -5,24 +5,6 @@
 //        });
 //    }
 //})
-
-notesApp.directive('changeBackground', function () {
-    return {
-        restrict: 'A',
-        controller: function($scope, $element, $attrs) {
-            console.log($scope.myColor);
-//            $scope.$on('inner::chosen', function(event, data) {
-//                console.log(event);
-//                $($element).css({ "background": data });
-//                if($attrs.changeBackground){
-//                    $scope.save($attrs.changeBackground, null, data);
-//                }
-//                //$scope.save($attrs.changeBackground, null, data);
-//            })
-        }
-    };
-});
-
 notesApp.directive('ngColorPicker', function () {
     var defaultColors = [
         '#F5FFFA',
@@ -35,19 +17,21 @@ notesApp.directive('ngColorPicker', function () {
         scope: {
             selected: '=',
             customizedColors: '=colors',
-            savebackground: '&'
+            savebackground: '&',
+            id: '@'
         },
         restrict: 'AE',
-        link: function (scope, element, attr) {
+        link: function (scope) {
+            var noteID = scope.id;
             scope.colors = scope.customizedColors || defaultColors;
-            scope.myColor = scope.selected || scope.colors[0];
+            var myColor = scope.selected || scope.colors[0];
             //For add notes' initial background
-            scope.selected = scope.myColor;
+            scope.selected = myColor;
             scope.pick = function (color) {
-                scope.myColor = color;
+                myColor = color;
                 scope.selected = color;
-                if(attr.id){
-                    scope.savebackground({id:attr.id, description:null, background:color});
+                if(angular.isDefined(noteID)){
+                    scope.savebackground({id:noteID, description:null, background:color});
                 }
             };
         },
