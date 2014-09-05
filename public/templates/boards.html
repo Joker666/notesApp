@@ -5,11 +5,11 @@
 
 <section>
     <!--<div ng-repeat="board in boards" ng-class="{'row bottomspace': ($index)%3==0}" class="board-container">-->
-    <div ng-repeat="board in boards" class="board-container scale-fade">
+    <div ng-repeat="board in boards | orderBy: '-updated_at'" class="board-container scale-fade">
         <div class="title-container">
             <input type="text" ng-model="board.title" ng-change="save(board.id, board.title, null)"/>
             <section class="board-icons">
-                <button class="trashBoard" ng-click='toggleModal()'>
+                <button class="trashBoard" alerti id="{{ board.id }}" index="{{ $index }}" delete-board="trash(idx, id)">
                     <i class="fa fa-trash-o fa-2x"></i>
                 </button>
                 <a ui-sref="boards.notes({ boardId: board.id })">

@@ -18,6 +18,9 @@ h1{
 h2{
   @include header2();
 }
+textarea {
+  resize: none;
+}
 
 .page.ng-leave 	{ z-index:999; }
 .page.ng-enter 	{ z-index:888; }

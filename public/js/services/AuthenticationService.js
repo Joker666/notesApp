@@ -9,7 +9,7 @@ notesApp.factory("AuthenticationService", function($http, SessionService) {
     };
 
     var loginError = function(response) {
-        console.log(response.flash);
+        return response.flash;
     };
 
     return {

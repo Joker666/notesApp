@@ -30,6 +30,13 @@
   left: 38%;
   @include span(3 of 12);
   height: 40%;
+  p{
+    color: red;
+    position: absolute;
+    top: 41%;
+    left: 24%;
+    font-size: 1em;
+  }
   h1{
     color: $softgreen;
     position: absolute;
@@ -85,7 +92,8 @@
       margin-bottom: 3%;
       border: none;
       @include border-radius(15px);
-      background: cornsilk;
+      background: url(../images/noise.png);
+      background-repeat: repeat;
       .title-container{
         -webkit-box-shadow: 0 8px 6px -6px gray;
         -moz-box-shadow: 0 8px 6px -6px grey;
@@ -100,6 +108,7 @@
           margin-left: 2%;
           font-size: 1.5rem;
           width: 71%;
+          opacity: .9;
         }
         a{
           margin-left: 2%;
@@ -110,12 +119,6 @@
             color: mediumspringgreen;
           }
         }
-//        .fa-2x-add{
-//          @include single-transition(all, 300ms, ease-out);
-//        }
-//        .fa-2x-remove{
-//          @include single-transition(all, 300ms, ease-out);
-//        }
         .trashBoard{
           @include invisible-button();
           margin-left: 10%;
@@ -133,6 +136,7 @@
           width: 100%;
           height: 155px;
           border: none;
+          opacity: .9;
         }
       }
       form{
@@ -214,4 +218,8 @@
       border: none;
     }
   }
+}
+
+.ajs-ok, .ajs-cancel{
+  cursor: pointer;
 }

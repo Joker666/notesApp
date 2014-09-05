@@ -35,6 +35,11 @@ notesApp.factory('BoardsService', function($http, $q, UserInfo){
             $http.put(url, params).success(defer.resolve).error(defer.reject);
 
             return defer.promise;
+        },
+        remove: function(boardId){
+            var defer = $q.defer();
+            $http.delete("/boards/" + boardId).success(defer.resolve).error(defer.reject);
+            return defer.promise;
         }
     };
 });

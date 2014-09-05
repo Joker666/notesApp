@@ -5,6 +5,31 @@
 //        });
 //    }
 //})
+
+notesApp.directive('alerti', function(){
+    return {
+        scope:{
+            deleteBoard: '&',
+            id: '@',
+            index: '@'
+        },
+        link: function(scope, element){
+            element.click(function(){
+                return alertify.confirm("Do you want to delete the board and all of it's notes ?",
+                    function(){
+                        console.log(scope.id);
+                        scope.deleteBoard({idx:scope.index, id:scope.id});
+                        alertify.success('Ok');
+                    }).setting({
+                        title: 'Confirm',
+                        transition:'zoom',
+                        movable: false
+                    }).show();
+            });
+        }
+    }
+});
+
 notesApp.directive('ngColorPicker', function () {
     var defaultColors = [
         '#F5FFFA',

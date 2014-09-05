@@ -4,7 +4,7 @@
 <section class="notes-section">
     <!--<div ng-repeat="note in notes" ng-class="{'row bottomspace': ($index)%3==0}" class="note-container scale-fade">-->
     <!--<div change-Background="{{note.id}}" ng-repeat="note in notes" class="note-container rotate-in" ng-style="{background: note.background}">-->
-    <div ng-repeat="note in notes" class="note-container rotate-in" ng-style="{background: note.background}">
+    <div ng-repeat="note in notes | orderBy: '-updated_at'" class="note-container rotate-in" ng-style="{background: note.background}">
         <div class="note-icons">
             <form ng-submit="trash($index, note.id)">
                 <button class="trash"><i class="fa fa-trash-o fa-2x"></i></button>

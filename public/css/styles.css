@@ -203,18 +203,23 @@ h2 {
   font-size: 2.2rem;
 }
 
-/* line 22, ../sass/_base.scss */
+/* line 21, ../sass/_base.scss */
+textarea {
+  resize: none;
+}
+
+/* line 25, ../sass/_base.scss */
 .page.ng-leave {
   z-index: 999;
 }
 
-/* line 23, ../sass/_base.scss */
+/* line 26, ../sass/_base.scss */
 .page.ng-enter {
   z-index: 888;
 }
 
 /* notes -------------------------- */
-/* line 27, ../sass/_base.scss */
+/* line 30, ../sass/_base.scss */
 .page-notes.ng-leave {
   -webkit-animation: scaleDown .7s ease both;
   -moz-animation: scaleDown .7s ease both;
@@ -222,14 +227,14 @@ h2 {
 }
 
 /* boards -------------------------- */
-/* line 35, ../sass/_base.scss */
+/* line 38, ../sass/_base.scss */
 .page-boards.ng-leave {
   -webkit-animation: scaleDown .7s ease both;
   -moz-animation: scaleDown .7s ease both;
   animation: scaleDown .7s ease both;
 }
 
-/* line 38, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 .page-boards.ng-enter {
   -webkit-animation: moveFromBottom .6s ease both;
   -moz-animation: moveFromBottom .6s ease both;
@@ -237,14 +242,14 @@ h2 {
 }
 
 /* login ------------------------ */
-/* line 43, ../sass/_base.scss */
+/* line 46, ../sass/_base.scss */
 .page-login.ng-leave {
   -webkit-animation: moveToTop .7s ease-in-out both;
   -moz-animation: moveToTop .7s ease-in-out both;
   animation: moveToTop .7s ease-in-out both;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 .page-login.ng-enter {
   -webkit-animation: slideInRight 0.5s both ease-in;
   -moz-animation: slideInRight 0.5s both ease-in;
@@ -254,7 +259,7 @@ h2 {
 /* ------------------------------------------- */
 /* Scale Fade
 /* ------------------------------------------- */
-/* line 54, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 .scale-fade {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -269,7 +274,7 @@ h2 {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   /* easeOutQuad */
 }
-/* line 57, ../sass/_base.scss */
+/* line 60, ../sass/_base.scss */
 .scale-fade.ng-enter {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
@@ -278,14 +283,14 @@ h2 {
   -webkit-transition-duration: 250ms;
   opacity: 0;
 }
-/* line 63, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
 .scale-fade.ng-enter-active {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   opacity: 1;
 }
-/* line 68, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 .scale-fade.ng-leave {
   transform: scale(1);
   -ms-transform: scale(1);
@@ -294,14 +299,14 @@ h2 {
   -webkit-transition-duration: 250ms;
   opacity: 1;
 }
-/* line 74, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 .scale-fade.ng-leave-active {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
   -webkit-transform: scale(0.7);
   opacity: 0;
 }
-/* line 80, ../sass/_base.scss */
+/* line 83, ../sass/_base.scss */
 .scale-fade.ng-hide-add {
   transform: scale(1);
   -ms-transform: scale(1);
@@ -310,14 +315,14 @@ h2 {
   -webkit-transition-duration: 250ms;
   opacity: 1;
 }
-/* line 85, ../sass/_base.scss */
+/* line 88, ../sass/_base.scss */
 .scale-fade.ng-hide-add.ng-hide-add-active {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
   -webkit-transform: scale(0.7);
   opacity: 0;
 }
-/* line 91, ../sass/_base.scss */
+/* line 94, ../sass/_base.scss */
 .scale-fade.ng-hide-remove {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
@@ -327,7 +332,7 @@ h2 {
   display: block !important;
   opacity: 0;
 }
-/* line 97, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 .scale-fade.ng-hide-remove.ng-hide-remove-active {
   transform: scale(1);
   -ms-transform: scale(1);
@@ -335,7 +340,7 @@ h2 {
   opacity: 1;
 }
 
-/* line 102, ../sass/_base.scss */
+/* line 105, ../sass/_base.scss */
 .rotate-in {
   -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
@@ -354,7 +359,7 @@ h2 {
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
   /* custom */
 }
-/* line 105, ../sass/_base.scss */
+/* line 108, ../sass/_base.scss */
 .rotate-in.ng-enter {
   transform: perspective(300px) rotateY(40deg);
   -ms-transform: perspective(300px) rotateY(40deg);
@@ -363,14 +368,14 @@ h2 {
   -webkit-transition-duration: 550ms;
   opacity: 0.7;
 }
-/* line 111, ../sass/_base.scss */
+/* line 114, ../sass/_base.scss */
 .rotate-in.ng-enter-active {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
   -webkit-transform: perspective(300px) rotateY(0deg);
   opacity: 1;
 }
-/* line 116, ../sass/_base.scss */
+/* line 119, ../sass/_base.scss */
 .rotate-in.ng-leave {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
@@ -379,14 +384,14 @@ h2 {
   -webkit-transition-duration: 550ms;
   opacity: 1;
 }
-/* line 122, ../sass/_base.scss */
+/* line 125, ../sass/_base.scss */
 .rotate-in.ng-leave-active {
   transform: perspective(300px) rotateY(-40deg);
   -ms-transform: perspective(300px) rotateY(-40deg);
   -webkit-transform: perspective(300px) rotateY(-40deg);
   opacity: 0.7;
 }
-/* line 128, ../sass/_base.scss */
+/* line 131, ../sass/_base.scss */
 .rotate-in.ng-hide-add {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
@@ -395,14 +400,14 @@ h2 {
   -webkit-transition-duration: 550ms;
   opacity: 1;
 }
-/* line 133, ../sass/_base.scss */
+/* line 136, ../sass/_base.scss */
 .rotate-in.ng-hide-add.ng-hide-add-active {
   transform: perspective(300px) rotateY(-40deg);
   -ms-transform: perspective(300px) rotateY(-40deg);
   -webkit-transform: perspective(300px) rotateY(-40deg);
   opacity: 0;
 }
-/* line 139, ../sass/_base.scss */
+/* line 142, ../sass/_base.scss */
 .rotate-in.ng-hide-remove {
   transform: perspective(300px) rotateY(40deg);
   -ms-transform: perspective(300px) rotateY(40deg);
@@ -412,7 +417,7 @@ h2 {
   display: block !important;
   opacity: 0;
 }
-/* line 145, ../sass/_base.scss */
+/* line 148, ../sass/_base.scss */
 .rotate-in.ng-hide-remove.ng-hide-remove-active {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
@@ -490,13 +495,21 @@ body:after {
   height: 40%;
 }
 /* line 33, ../sass/_modules.scss */
+.login-form p {
+  color: red;
+  position: absolute;
+  top: 41%;
+  left: 24%;
+  font-size: 1em;
+}
+/* line 40, ../sass/_modules.scss */
 .login-form h1 {
   color: #60d7a9;
   position: absolute;
   top: 12%;
   left: 25%;
 }
-/* line 39, ../sass/_modules.scss */
+/* line 46, ../sass/_modules.scss */
 .login-form input[type=text] {
   top: 50%;
   position: absolute;
@@ -514,7 +527,7 @@ body:after {
   border-bottom: 1px solid #b3b3b3;
   text-align: center;
 }
-/* line 43, ../sass/_modules.scss */
+/* line 50, ../sass/_modules.scss */
 .login-form input[type=password] {
   top: 70%;
   position: absolute;
@@ -532,7 +545,7 @@ body:after {
   border-bottom: 1px solid #b3b3b3;
   text-align: center;
 }
-/* line 47, ../sass/_modules.scss */
+/* line 54, ../sass/_modules.scss */
 .login-form button {
   background: none !important;
   border: none;
@@ -544,7 +557,7 @@ body:after {
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
-/* line 53, ../sass/_modules.scss */
+/* line 60, ../sass/_modules.scss */
 .login-form button:hover {
   color: #60d7a9;
   -moz-transform: translateY(0.2em);
@@ -554,17 +567,17 @@ body:after {
   cursor: pointer;
 }
 
-/* line 60, ../sass/_modules.scss */
+/* line 67, ../sass/_modules.scss */
 .row {
   clear: both;
 }
 
-/* line 63, ../sass/_modules.scss */
+/* line 70, ../sass/_modules.scss */
 .bottomspace {
   margin-bottom: 3%;
 }
 
-/* line 67, ../sass/_modules.scss */
+/* line 74, ../sass/_modules.scss */
 .home #logout {
   background: none !important;
   border: none;
@@ -579,7 +592,7 @@ body:after {
   padding-right: 0.41667%;
   margin-top: 0.5%;
 }
-/* line 73, ../sass/_modules.scss */
+/* line 80, ../sass/_modules.scss */
 .home h1 {
   color: whitesmoke;
   -moz-box-sizing: border-box;
@@ -594,11 +607,11 @@ body:after {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-/* line 79, ../sass/_modules.scss */
+/* line 86, ../sass/_modules.scss */
 .home section {
   clear: both;
 }
-/* line 81, ../sass/_modules.scss */
+/* line 88, ../sass/_modules.scss */
 .home section .board-container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -614,16 +627,17 @@ body:after {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
-  background: cornsilk;
+  background: url(../images/noise.png);
+  background-repeat: repeat;
 }
-/* line 89, ../sass/_modules.scss */
+/* line 97, ../sass/_modules.scss */
 .home section .board-container .title-container {
   -webkit-box-shadow: 0 8px 6px -6px gray;
   -moz-box-shadow: 0 8px 6px -6px grey;
   box-shadow: 0 8px 6px -6px grey;
   padding-bottom: 1%;
 }
-/* line 94, ../sass/_modules.scss */
+/* line 102, ../sass/_modules.scss */
 .home section .board-container .title-container .board-icons {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -633,15 +647,16 @@ body:after {
   padding-left: 0.41667%;
   padding-right: 0.41667%;
 }
-/* line 97, ../sass/_modules.scss */
+/* line 105, ../sass/_modules.scss */
 .home section .board-container .title-container input {
   background: inherit;
   border: none;
   margin-left: 2%;
   font-size: 1.5rem;
   width: 71%;
+  opacity: .9;
 }
-/* line 104, ../sass/_modules.scss */
+/* line 113, ../sass/_modules.scss */
 .home section .board-container .title-container a {
   margin-left: 2%;
   margin-bottom: 1%;
@@ -650,11 +665,11 @@ body:after {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
-/* line 109, ../sass/_modules.scss */
+/* line 118, ../sass/_modules.scss */
 .home section .board-container .title-container a:hover {
   color: mediumspringgreen;
 }
-/* line 119, ../sass/_modules.scss */
+/* line 122, ../sass/_modules.scss */
 .home section .board-container .title-container .trashBoard {
   background: none !important;
   border: none;
@@ -665,22 +680,23 @@ body:after {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
-/* line 124, ../sass/_modules.scss */
+/* line 127, ../sass/_modules.scss */
 .home section .board-container .title-container .trashBoard:hover {
   color: orangered;
 }
-/* line 129, ../sass/_modules.scss */
+/* line 132, ../sass/_modules.scss */
 .home section .board-container .board-description {
   padding-top: 4%;
 }
-/* line 131, ../sass/_modules.scss */
+/* line 134, ../sass/_modules.scss */
 .home section .board-container .board-description textarea {
   background: inherit;
   width: 100%;
   height: 155px;
   border: none;
+  opacity: .9;
 }
-/* line 139, ../sass/_modules.scss */
+/* line 143, ../sass/_modules.scss */
 .home section .board-container form button {
   background: none !important;
   border: none;
@@ -699,12 +715,12 @@ body:after {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
-/* line 146, ../sass/_modules.scss */
+/* line 150, ../sass/_modules.scss */
 .home section .board-container form button:hover {
   color: mediumspringgreen;
 }
 
-/* line 155, ../sass/_modules.scss */
+/* line 159, ../sass/_modules.scss */
 .notes h1 {
   color: whitesmoke;
   -moz-box-sizing: border-box;
@@ -720,12 +736,12 @@ body:after {
   margin-bottom: 2%;
 }
 
-/* line 163, ../sass/_modules.scss */
+/* line 167, ../sass/_modules.scss */
 .notes-section {
   clear: both;
 }
 
-/* line 166, ../sass/_modules.scss */
+/* line 170, ../sass/_modules.scss */
 .note-container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -745,12 +761,12 @@ body:after {
   -webkit-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-/* line 174, ../sass/_modules.scss */
+/* line 178, ../sass/_modules.scss */
 .note-container .note-icons {
   width: 100%;
   height: 40px;
 }
-/* line 177, ../sass/_modules.scss */
+/* line 181, ../sass/_modules.scss */
 .note-container .note-icons .trash, .note-container .note-icons .add {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -767,17 +783,17 @@ body:after {
   transition: all 200ms ease-out;
   margin-top: 1.5%;
 }
-/* line 183, ../sass/_modules.scss */
+/* line 187, ../sass/_modules.scss */
 .note-container .note-icons .trash:hover {
   color: orangered;
   cursor: pointer;
 }
-/* line 187, ../sass/_modules.scss */
+/* line 191, ../sass/_modules.scss */
 .note-container .note-icons .add:hover {
   color: mediumspringgreen;
   cursor: pointer;
 }
-/* line 191, ../sass/_modules.scss */
+/* line 195, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -787,11 +803,11 @@ body:after {
   padding-left: 0.41667%;
   padding-right: 0.41667%;
 }
-/* line 193, ../sass/_modules.scss */
+/* line 197, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker ul {
   margin-top: 5.5%;
 }
-/* line 196, ../sass/_modules.scss */
+/* line 200, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker li {
   width: 25px;
   height: 25px;
@@ -799,18 +815,23 @@ body:after {
   display: inline-block;
   margin-right: 4%;
 }
-/* line 203, ../sass/_modules.scss */
+/* line 207, ../sass/_modules.scss */
 .note-container .note-icons ng-color-picker .selected {
   border: 1px solid #333;
 }
-/* line 208, ../sass/_modules.scss */
+/* line 212, ../sass/_modules.scss */
 .note-container .note-description {
   clear: both;
 }
-/* line 210, ../sass/_modules.scss */
+/* line 214, ../sass/_modules.scss */
 .note-container .note-description textarea {
   background: inherit;
   width: 100%;
   height: 155px;
   border: none;
+}
+
+/* line 223, ../sass/_modules.scss */
+.ajs-ok, .ajs-cancel {
+  cursor: pointer;
 }

@@ -6,6 +6,8 @@ notesApp.controller("LoginController", function($scope, $state, AuthenticationSe
     $scope.login = function() {
         AuthenticationService.login($scope.credentials).success(function() {
             $state.go('boards');
+        }).error(function(cause){
+            $scope.error = cause.flash;
         });
     };
 });

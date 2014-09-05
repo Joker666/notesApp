@@ -1,4 +1,4 @@
-notesApp.controller('BoardsController', function(BoardsService, $scope, AuthenticationService, $state, $timeout, UserInfo){
+notesApp.controller('BoardsController', function(BoardsService, $scope, AuthenticationService, $state, $timeout, UserInfo, expiry){
     $scope.pageClass = 'page-boards';
     $scope.logout = function() {
         AuthenticationService.logout().success(function() {
@@ -31,6 +31,13 @@ notesApp.controller('BoardsController', function(BoardsService, $scope, Authenti
             $scope.boards.push(data.board);
             $scope.newboard.description = '';
             $scope.newboard.title = '';
+        });
+    }
+
+    $scope.trash = function(idx, id){
+        $scope.boards.splice(idx, 1);
+        BoardsService.remove(id).then(function(){
+            console.log('board removed');
         });
     }
 });

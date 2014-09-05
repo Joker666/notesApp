@@ -72,7 +72,8 @@ class BoardController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+        $board = Board::findOrFail($id);
+        $board->delete();
 	}
 
 

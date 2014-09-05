@@ -17,7 +17,12 @@ notesApp.config(function($stateProvider, $urlRouterProvider){
         .state('boards', {
             url: '/boards',
             templateUrl: 'templates/boards.html',
-            controller: 'BoardsController'
+            controller: 'BoardsController',
+            resolve: {
+                'expiry': function($http){
+                    return $http.get('/expiry');
+                }
+            }
         })
         .state('boards.notes', {
             url: '/:boardId/notes',
@@ -29,6 +34,28 @@ notesApp.config(function($stateProvider, $urlRouterProvider){
             }
         })
 });
+
+notesApp.config(function($httpProvider){
+    var logsOutUserOn401 = function($state, $q, SessionService){
+        var success = function(response){
+            return response;
+        };
+        var error = function(response){  //HTTP not authorized
+            if(response.status === 401){
+                SessionService.unset('authenticated');
+                $state.go('login');
+                return $q.reject(response);
+            } else {
+                return $q.reject(response)
+            }
+        };
+
+        return function(promise){
+            return promise.then(success, error);
+        }
+    }
+});
+
 notesApp.run(function($rootScope, $state, AuthenticationService, $stateParams) {
     var statesThatRequireAuth = ['boards', 'boards.notes'];
 

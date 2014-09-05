@@ -4,6 +4,8 @@
     <title>NoteApp</title>
     <link rel="stylesheet" href="/css/loading-bar.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/alertify/alertify.css">
+    <link rel="stylesheet" href="/css/alertify/default.css">
     <link rel="stylesheet" href="/css/styles.css">
 
     <script src="/js/lib/jquery.js"></script>
@@ -14,6 +16,7 @@
     <script src="/js/lib/angular-ui-router.js"></script>
     <script src="/js/lib/angular-animate.js"></script>
     <script src="/js/lib/angular-resource.js"></script>
+    <script src="/js/lib/alertify.js"></script>
 
 
     <script src="/js/app.js"></script>

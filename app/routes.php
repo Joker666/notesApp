@@ -15,5 +15,9 @@ Route::get('/', function(){
 });
 Route::post('/auth/login', 'UserController@login');
 Route::get('/auth/logout', 'UserController@logout');
+Route::get('/expiry', function(){
+//    return Response::json(['status' => 401, 'mesg' => 'session expired!'],401);
+    return Response::json(['status' => 200, 'mesg' => 'option not allowed!'],200);
+});
 Route::resource('boards', 'BoardController', ['except' => ['create', 'show']]);
 Route::resource('boards/{boardId}/notes', 'NoteController', ['except' => ['create', 'show']]);
