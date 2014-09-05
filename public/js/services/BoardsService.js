@@ -36,7 +36,8 @@ notesApp.factory('BoardsService', function($http, $q, UserInfo){
 
             return defer.promise;
         },
-        remove: function(boardId){
+        destroy: function(boardId) {
+            console.log(boardId);
             var defer = $q.defer();
             $http.delete("/boards/" + boardId).success(defer.resolve).error(defer.reject);
             return defer.promise;
