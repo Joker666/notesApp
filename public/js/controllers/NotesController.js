@@ -9,9 +9,9 @@ notesApp.controller('NotesController', function($scope, NotesService, $statePara
 
     $scope.getNotes();
 
-    $scope.trash = function(idx, id){
-        $scope.notes.splice(idx, 1);
-        NotesService.removeData($stateParams['boardId'], id).then(function(){
+    $scope.trash = function(note){
+        $scope.notes.splice($scope.notes.indexOf(note),1);
+        NotesService.removeData($stateParams['boardId'], note.id).then(function(){
             console.log('note removed');
         });
     };

@@ -34,9 +34,9 @@ notesApp.controller('BoardsController', function(BoardsService, $scope, Authenti
         });
     }
 
-    $scope.trash = function(idx, id){
-        $scope.boards.splice(idx, 1);
-        BoardsService.remove(id).then(function(){
+    $scope.trash = function(board){
+        $scope.boards.splice($scope.boards.indexOf(board),1);
+        BoardsService.remove(board.id).then(function(){
             console.log('board removed');
         });
     }

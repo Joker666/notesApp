@@ -10,15 +10,13 @@ notesApp.directive('alerti', function(){
     return {
         scope:{
             deleteBoard: '&',
-            id: '@',
-            index: '@'
+            item: '@'
         },
         link: function(scope, element){
             element.click(function(){
                 return alertify.confirm("Do you want to delete the board and all of it's notes ?",
                     function(){
-                        console.log(scope.id);
-                        scope.deleteBoard({idx:scope.index, id:scope.id});
+                        scope.deleteBoard({board:scope.item});
                         alertify.success('Ok');
                     }).setting({
                         title: 'Confirm',
